@@ -15,7 +15,7 @@ final class TabBarController: UITabBarController {
     }
 
     private func setupTabBar() {
-        let dataSource: [TabBarItem] = [.home, .search, .favourite, .selection, .map]
+        let dataSource: [TabBarItem] = [.home, .selection, .search, .map, .favourite]
         self.viewControllers = dataSource.map {
             switch $0 {
             case .home:
@@ -65,7 +65,7 @@ private enum TabBarItem {
         case .favourite:
             return "Избранное"
         case .selection:
-            return "Подбор"
+            return "Все санатории"
         case .map:
             return "Карта"
         }
