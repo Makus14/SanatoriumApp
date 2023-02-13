@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BBF47DC967E237BE849C1AA8 /* Pods_Sanatorium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677F46496B579E5C0C5D99E2 /* Pods_Sanatorium.framework */; };
 		BD8001DA29787E2F00DEFA45 /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8001D829787E2F00DEFA45 /* FavouriteViewController.swift */; };
 		BD8001DB29787E2F00DEFA45 /* FavouriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD8001D929787E2F00DEFA45 /* FavouriteViewController.xib */; };
 		BDA063F7297878B200B3E247 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA063F6297878B200B3E247 /* AppDelegate.swift */; };
@@ -25,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33480A1F7B18DCA54223F4DE /* Pods-Sanatorium.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sanatorium.release.xcconfig"; path = "Target Support Files/Pods-Sanatorium/Pods-Sanatorium.release.xcconfig"; sourceTree = "<group>"; };
+		677F46496B579E5C0C5D99E2 /* Pods_Sanatorium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sanatorium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE5B07082A1DD3770FCAAB41 /* Pods-Sanatorium.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sanatorium.debug.xcconfig"; path = "Target Support Files/Pods-Sanatorium/Pods-Sanatorium.debug.xcconfig"; sourceTree = "<group>"; };
 		BD8001D829787E2F00DEFA45 /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
 		BD8001D929787E2F00DEFA45 /* FavouriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteViewController.xib; sourceTree = "<group>"; };
 		BDA063F3297878B200B3E247 /* Sanatorium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sanatorium.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,12 +53,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBF47DC967E237BE849C1AA8 /* Pods_Sanatorium.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C849A5603EBB1EDFC69C5AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE5B07082A1DD3770FCAAB41 /* Pods-Sanatorium.debug.xcconfig */,
+				33480A1F7B18DCA54223F4DE /* Pods-Sanatorium.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AB7925D77A016A7CA99120D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				677F46496B579E5C0C5D99E2 /* Pods_Sanatorium.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BD8001D729787DBC00DEFA45 /* FavouriteViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +92,8 @@
 			children = (
 				BDA063F5297878B200B3E247 /* Sanatorium */,
 				BDA063F4297878B200B3E247 /* Products */,
+				3C849A5603EBB1EDFC69C5AE /* Pods */,
+				AB7925D77A016A7CA99120D7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,9 +182,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDA06407297878B600B3E247 /* Build configuration list for PBXNativeTarget "Sanatorium" */;
 			buildPhases = (
+				1ACEBB1306350E818BD9D86A /* [CP] Check Pods Manifest.lock */,
 				BDA063EF297878B200B3E247 /* Sources */,
 				BDA063F0297878B200B3E247 /* Frameworks */,
 				BDA063F1297878B200B3E247 /* Resources */,
+				CCEFD029E9D0AEF446C6FDE3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -219,6 +246,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1ACEBB1306350E818BD9D86A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sanatorium-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCEFD029E9D0AEF446C6FDE3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sanatorium/Pods-Sanatorium-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sanatorium/Pods-Sanatorium-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sanatorium/Pods-Sanatorium-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BDA063EF297878B200B3E247 /* Sources */ = {
@@ -366,6 +435,7 @@
 		};
 		BDA06408297878B600B3E247 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE5B07082A1DD3770FCAAB41 /* Pods-Sanatorium.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -392,6 +462,7 @@
 		};
 		BDA06409297878B600B3E247 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33480A1F7B18DCA54223F4DE /* Pods-Sanatorium.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
