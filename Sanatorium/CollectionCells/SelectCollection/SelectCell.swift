@@ -12,6 +12,8 @@ class SelectCell: UICollectionViewCell {
     
     @IBOutlet weak var nameOfRegionLabel: UILabel!
     
+    @IBOutlet weak var imageOfRegion: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -19,5 +21,6 @@ class SelectCell: UICollectionViewCell {
 
     func setName(type: EnumNames) {
         nameOfRegionLabel.text = type.title
+        imageOfRegion.image = type.image
     }
 }

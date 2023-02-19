@@ -60,6 +60,7 @@
             </constraints>
             <size key="customSize" width="396" height="135"/>
             <connections>
+                <outlet property="imageOfRegion" destination="WSP-xA-rwr" id="aVT-LJ-SCv"/>
                 <outlet property="nameOfRegionLabel" destination="Rem-vU-7ew" id="Mib-K2-AbG"/>
             </connections>
             <point key="canvasLocation" x="421.37404580152668" y="49.647887323943664"/>

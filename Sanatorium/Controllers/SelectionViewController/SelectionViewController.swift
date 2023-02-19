@@ -61,5 +61,42 @@ extension SelectionViewController: UICollectionViewDataSource {
 }
 
 extension SelectionViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == collectionView {
+            let type = massNames[indexPath.row]
+
+            switch type {
+                case .brest:
+                    
+                    let vc = BrestController(nibName: "BrestController", bundle: nil)
+                     self.navigationController!.pushViewController(vc, animated: true)
+                    
+                    
+                    
+                case .vitebsk:
+                    let mainstoryboard:UIStoryboard = UIStoryboard(name: "BrestController", bundle: nil)
+                    let initialController = mainstoryboard.instantiateViewController(withIdentifier: "BrestController") as! BrestController
+                    self.navigationController?.pushViewController(initialController, animated: true)
+                case .gomel:
+                    let storyboard = UIStoryboard(name: "BrestController", bundle: nil)
+                    let brestVC = storyboard.instantiateViewController(withIdentifier: "BrestController") as! BrestController
+                    self.navigationController?.pushViewController(brestVC, animated: true)
+                case .grodno:
+                    let storyboard = UIStoryboard(name: "BrestController", bundle: nil)
+                    let brestVC = storyboard.instantiateViewController(withIdentifier: "BrestController") as! BrestController
+                    self.navigationController?.pushViewController(brestVC, animated: true)
+                case .minsk:
+                    let storyboard = UIStoryboard(name: "BrestController", bundle: nil)
+                    let brestVC = storyboard.instantiateViewController(withIdentifier: "BrestController") as! BrestController
+                    self.navigationController?.pushViewController(brestVC, animated: true)
+                case .mogilev:
+                    let storyboard = UIStoryboard(name: "BrestController", bundle: nil)
+                    let brestVC = storyboard.instantiateViewController(withIdentifier: "BrestController") as! BrestController
+                    self.navigationController?.pushViewController(brestVC, animated: true)
+            }
+        }
+    }
+    
     
 }
+

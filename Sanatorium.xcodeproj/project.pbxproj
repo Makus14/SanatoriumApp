@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		BBF47DC967E237BE849C1AA8 /* Pods_Sanatorium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677F46496B579E5C0C5D99E2 /* Pods_Sanatorium.framework */; };
+		BD43FC7B299E5F8E0025755B /* BrestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43FC79299E5F8E0025755B /* BrestController.swift */; };
+		BD43FC7C299E5F8E0025755B /* BrestController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD43FC7A299E5F8E0025755B /* BrestController.xib */; };
+		BD43FC85299E5FEB0025755B /* VitebskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43FC83299E5FEB0025755B /* VitebskController.swift */; };
+		BD43FC86299E5FEB0025755B /* VitebskController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD43FC84299E5FEB0025755B /* VitebskController.xib */; };
+		BD43FC89299E60020025755B /* GomelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43FC87299E60020025755B /* GomelController.swift */; };
+		BD43FC8A299E60020025755B /* GomelController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD43FC88299E60020025755B /* GomelController.xib */; };
+		BD43FC8E299E601A0025755B /* GrodnoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43FC8C299E601A0025755B /* GrodnoController.swift */; };
+		BD43FC8F299E601A0025755B /* GrodnoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD43FC8D299E601A0025755B /* GrodnoController.xib */; };
+		BD43FC92299E602C0025755B /* MinskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43FC90299E602C0025755B /* MinskController.swift */; };
+		BD43FC93299E602C0025755B /* MinskController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD43FC91299E602C0025755B /* MinskController.xib */; };
+		BD43FC96299E60410025755B /* MogilevController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43FC94299E60410025755B /* MogilevController.swift */; };
+		BD43FC97299E60410025755B /* MogilevController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD43FC95299E60410025755B /* MogilevController.xib */; };
 		BD8001DA29787E2F00DEFA45 /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8001D829787E2F00DEFA45 /* FavouriteViewController.swift */; };
 		BD8001DB29787E2F00DEFA45 /* FavouriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD8001D929787E2F00DEFA45 /* FavouriteViewController.xib */; };
 		BD89EF28299AB74A00CD428B /* SelectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD89EF26299AB74A00CD428B /* SelectCell.swift */; };
@@ -32,6 +44,18 @@
 		33480A1F7B18DCA54223F4DE /* Pods-Sanatorium.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sanatorium.release.xcconfig"; path = "Target Support Files/Pods-Sanatorium/Pods-Sanatorium.release.xcconfig"; sourceTree = "<group>"; };
 		677F46496B579E5C0C5D99E2 /* Pods_Sanatorium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sanatorium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5B07082A1DD3770FCAAB41 /* Pods-Sanatorium.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sanatorium.debug.xcconfig"; path = "Target Support Files/Pods-Sanatorium/Pods-Sanatorium.debug.xcconfig"; sourceTree = "<group>"; };
+		BD43FC79299E5F8E0025755B /* BrestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrestController.swift; sourceTree = "<group>"; };
+		BD43FC7A299E5F8E0025755B /* BrestController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrestController.xib; sourceTree = "<group>"; };
+		BD43FC83299E5FEB0025755B /* VitebskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitebskController.swift; sourceTree = "<group>"; };
+		BD43FC84299E5FEB0025755B /* VitebskController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VitebskController.xib; sourceTree = "<group>"; };
+		BD43FC87299E60020025755B /* GomelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GomelController.swift; sourceTree = "<group>"; };
+		BD43FC88299E60020025755B /* GomelController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GomelController.xib; sourceTree = "<group>"; };
+		BD43FC8C299E601A0025755B /* GrodnoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrodnoController.swift; sourceTree = "<group>"; };
+		BD43FC8D299E601A0025755B /* GrodnoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GrodnoController.xib; sourceTree = "<group>"; };
+		BD43FC90299E602C0025755B /* MinskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinskController.swift; sourceTree = "<group>"; };
+		BD43FC91299E602C0025755B /* MinskController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MinskController.xib; sourceTree = "<group>"; };
+		BD43FC94299E60410025755B /* MogilevController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MogilevController.swift; sourceTree = "<group>"; };
+		BD43FC95299E60410025755B /* MogilevController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MogilevController.xib; sourceTree = "<group>"; };
 		BD8001D829787E2F00DEFA45 /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
 		BD8001D929787E2F00DEFA45 /* FavouriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteViewController.xib; sourceTree = "<group>"; };
 		BD89EF26299AB74A00CD428B /* SelectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCell.swift; sourceTree = "<group>"; };
@@ -81,6 +105,73 @@
 				677F46496B579E5C0C5D99E2 /* Pods_Sanatorium.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD43FC77299E5F4F0025755B /* SelectRegion */ = {
+			isa = PBXGroup;
+			children = (
+				BD43FC81299E5FC40025755B /* Mogilev */,
+				BD43FC80299E5FBA0025755B /* Minsk */,
+				BD43FC7F299E5FAF0025755B /* Grodno */,
+				BD43FC7E299E5FA60025755B /* Gomel */,
+				BD43FC7D299E5F960025755B /* Vitebsk */,
+				BD43FC78299E5F650025755B /* Brest */,
+			);
+			path = SelectRegion;
+			sourceTree = "<group>";
+		};
+		BD43FC78299E5F650025755B /* Brest */ = {
+			isa = PBXGroup;
+			children = (
+				BD43FC79299E5F8E0025755B /* BrestController.swift */,
+				BD43FC7A299E5F8E0025755B /* BrestController.xib */,
+			);
+			path = Brest;
+			sourceTree = "<group>";
+		};
+		BD43FC7D299E5F960025755B /* Vitebsk */ = {
+			isa = PBXGroup;
+			children = (
+				BD43FC83299E5FEB0025755B /* VitebskController.swift */,
+				BD43FC84299E5FEB0025755B /* VitebskController.xib */,
+			);
+			path = Vitebsk;
+			sourceTree = "<group>";
+		};
+		BD43FC7E299E5FA60025755B /* Gomel */ = {
+			isa = PBXGroup;
+			children = (
+				BD43FC87299E60020025755B /* GomelController.swift */,
+				BD43FC88299E60020025755B /* GomelController.xib */,
+			);
+			path = Gomel;
+			sourceTree = "<group>";
+		};
+		BD43FC7F299E5FAF0025755B /* Grodno */ = {
+			isa = PBXGroup;
+			children = (
+				BD43FC8C299E601A0025755B /* GrodnoController.swift */,
+				BD43FC8D299E601A0025755B /* GrodnoController.xib */,
+			);
+			path = Grodno;
+			sourceTree = "<group>";
+		};
+		BD43FC80299E5FBA0025755B /* Minsk */ = {
+			isa = PBXGroup;
+			children = (
+				BD43FC90299E602C0025755B /* MinskController.swift */,
+				BD43FC91299E602C0025755B /* MinskController.xib */,
+			);
+			path = Minsk;
+			sourceTree = "<group>";
+		};
+		BD43FC81299E5FC40025755B /* Mogilev */ = {
+			isa = PBXGroup;
+			children = (
+				BD43FC94299E60410025755B /* MogilevController.swift */,
+				BD43FC95299E60410025755B /* MogilevController.xib */,
+			);
+			path = Mogilev;
 			sourceTree = "<group>";
 		};
 		BD8001D729787DBC00DEFA45 /* FavouriteViewController */ = {
@@ -185,6 +276,7 @@
 		BDA0641329787C6A00B3E247 /* SelectionViewController */ = {
 			isa = PBXGroup;
 			children = (
+				BD43FC77299E5F4F0025755B /* SelectRegion */,
 				BDA0641429787CBE00B3E247 /* SelectionViewController.swift */,
 				BDA0641529787CBE00B3E247 /* SelectionViewController.xib */,
 			);
@@ -277,10 +369,16 @@
 			files = (
 				BDA06403297878B600B3E247 /* LaunchScreen.storyboard in Resources */,
 				BDA0641729787CBE00B3E247 /* SelectionViewController.xib in Resources */,
+				BD43FC7C299E5F8E0025755B /* BrestController.xib in Resources */,
+				BD43FC93299E602C0025755B /* MinskController.xib in Resources */,
 				BDA0641F29787CD900B3E247 /* SearchViewController.xib in Resources */,
+				BD43FC8A299E60020025755B /* GomelController.xib in Resources */,
 				BD8001DB29787E2F00DEFA45 /* FavouriteViewController.xib in Resources */,
+				BD43FC8F299E601A0025755B /* GrodnoController.xib in Resources */,
 				BDA06400297878B600B3E247 /* Assets.xcassets in Resources */,
+				BD43FC86299E5FEB0025755B /* VitebskController.xib in Resources */,
 				BDA0641B29787CCB00B3E247 /* MapViewController.xib in Resources */,
+				BD43FC97299E60410025755B /* MogilevController.xib in Resources */,
 				BDA0642329787CE500B3E247 /* HomeViewController.xib in Resources */,
 				BD89EF29299AB74A00CD428B /* SelectCell.xib in Resources */,
 			);
@@ -335,14 +433,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD43FC8E299E601A0025755B /* GrodnoController.swift in Sources */,
 				BDA0641E29787CD900B3E247 /* SearchViewController.swift in Sources */,
 				BDA0642629787D1600B3E247 /* TabBarController.swift in Sources */,
+				BD43FC89299E60020025755B /* GomelController.swift in Sources */,
 				BD89EF28299AB74A00CD428B /* SelectCell.swift in Sources */,
 				BDA063F7297878B200B3E247 /* AppDelegate.swift in Sources */,
 				BDA0641629787CBE00B3E247 /* SelectionViewController.swift in Sources */,
 				BD8001DA29787E2F00DEFA45 /* FavouriteViewController.swift in Sources */,
+				BD43FC92299E602C0025755B /* MinskController.swift in Sources */,
+				BD43FC96299E60410025755B /* MogilevController.swift in Sources */,
+				BD43FC85299E5FEB0025755B /* VitebskController.swift in Sources */,
 				BDA0641A29787CCB00B3E247 /* MapViewController.swift in Sources */,
 				BDE45088299ABD110078F04E /* EnumNames.swift in Sources */,
+				BD43FC7B299E5F8E0025755B /* BrestController.swift in Sources */,
 				BDA0642229787CE500B3E247 /* HomeViewController.swift in Sources */,
 				BDA063F9297878B200B3E247 /* SceneDelegate.swift in Sources */,
 			);
@@ -488,6 +592,7 @@
 				INFOPLIST_FILE = Sanatorium/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -515,6 +620,7 @@
 				INFOPLIST_FILE = Sanatorium/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

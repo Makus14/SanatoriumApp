@@ -26,5 +26,22 @@ enum EnumNames: CaseIterable {
             case .mogilev:      return "Могилевская область"
         }
     }
+    
+    var image: UIImage? {
+        switch self {
+            case .brest:
+                return UIImage(named: "brestImage")
+            case .vitebsk:
+                return UIImage(named: "vitebskImage")
+            case .gomel:
+                return UIImage(named: "gomelImage")
+            case .grodno:
+                return UIImage(named: "grodnoImage")
+            case .minsk:
+                return UIImage(named: "minskImage")
+            case .mogilev:
+                return UIImage(named: "mogilevImage")
+        }
+    }
 
 }

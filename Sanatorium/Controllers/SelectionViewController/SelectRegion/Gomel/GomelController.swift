@@ -1,13 +1,13 @@
 //
-//  SearchViewController.swift
+//  GomelController.swift
 //  Sanatorium
 //
-//  Created by Mac on 18/01/2023.
+//  Created by Mac on 16/02/2023.
 //
 
 import UIKit
 
-class SearchViewController: UIViewController {
+class GomelController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
