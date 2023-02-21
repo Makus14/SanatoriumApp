@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class SelectionViewController: UIViewController {
     let imageView : UIImageView = {
@@ -28,6 +29,8 @@ class SelectionViewController: UIViewController {
         
         collectionView.dataSource = self
         collectionView.delegate = self
+        
+
         
         registerCell()
         
@@ -67,32 +70,23 @@ extension SelectionViewController: UICollectionViewDelegate {
 
             switch type {
                 case .brest:
-                    
-                    let vc = BrestController(nibName: "BrestController", bundle: nil)
-                     self.navigationController!.pushViewController(vc, animated: true)
-                    
-                    
-                    
+                    let vcBrest = BrestController(nibName: "BrestController", bundle: nil)
+                     self.navigationController!.pushViewController(vcBrest, animated: true)
                 case .vitebsk:
-                    let mainstoryboard:UIStoryboard = UIStoryboard(name: "BrestController", bundle: nil)
-                    let initialController = mainstoryboard.instantiateViewController(withIdentifier: "BrestController") as! BrestController
-                    self.navigationController?.pushViewController(initialController, animated: true)
+                    let vcVitebsk = VitebskController(nibName: "VitebskController", bundle: nil)
+                     self.navigationController!.pushViewController(vcVitebsk, animated: true)
                 case .gomel:
-                    let storyboard = UIStoryboard(name: "BrestController", bundle: nil)
-                    let brestVC = storyboard.instantiateViewController(withIdentifier: "BrestController") as! BrestController
-                    self.navigationController?.pushViewController(brestVC, animated: true)
+                    let vcGomel = GomelController(nibName: "GomelController", bundle: nil)
+                     self.navigationController!.pushViewController(vcGomel, animated: true)
                 case .grodno:
-                    let storyboard = UIStoryboard(name: "BrestController", bundle: nil)
-                    let brestVC = storyboard.instantiateViewController(withIdentifier: "BrestController") as! BrestController
-                    self.navigationController?.pushViewController(brestVC, animated: true)
+                    let vcGrodno = GrodnoController(nibName: "GrodnoController", bundle: nil)
+                     self.navigationController!.pushViewController(vcGrodno, animated: true)
                 case .minsk:
-                    let storyboard = UIStoryboard(name: "BrestController", bundle: nil)
-                    let brestVC = storyboard.instantiateViewController(withIdentifier: "BrestController") as! BrestController
-                    self.navigationController?.pushViewController(brestVC, animated: true)
+                    let vcMinsk = MinskController(nibName: "MinskController", bundle: nil)
+                     self.navigationController!.pushViewController(vcMinsk, animated: true)
                 case .mogilev:
-                    let storyboard = UIStoryboard(name: "BrestController", bundle: nil)
-                    let brestVC = storyboard.instantiateViewController(withIdentifier: "BrestController") as! BrestController
-                    self.navigationController?.pushViewController(brestVC, animated: true)
+                    let vcMogilev = MogilevController(nibName: "MogilevController", bundle: nil)
+                     self.navigationController!.pushViewController(vcMogilev, animated: true)
             }
         }
     }
