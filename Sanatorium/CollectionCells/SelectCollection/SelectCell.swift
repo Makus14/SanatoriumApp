@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class SelectCell: UICollectionViewCell {
     static let id = String(describing: SelectCell.self)
@@ -19,8 +20,8 @@ class SelectCell: UICollectionViewCell {
         
     }
 
-    func setName(type: EnumNames) {
-        nameOfRegionLabel.text = type.title
-        imageOfRegion.image = type.image
+    func setName(city: String, imageURL: URL?) {
+        nameOfRegionLabel.text = city
+        imageOfRegion.sd_setImage(with: imageURL)
     }
 }

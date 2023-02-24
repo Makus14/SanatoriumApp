@@ -22,6 +22,9 @@
 		BD43FC97299E60410025755B /* MogilevController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD43FC95299E60410025755B /* MogilevController.xib */; };
 		BD8001DA29787E2F00DEFA45 /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8001D829787E2F00DEFA45 /* FavouriteViewController.swift */; };
 		BD8001DB29787E2F00DEFA45 /* FavouriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD8001D929787E2F00DEFA45 /* FavouriteViewController.xib */; };
+		BD8624EB29A54F60004F402C /* RegionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8624EA29A54F60004F402C /* RegionModel.swift */; };
+		BD8624EE29A78F0B004F402C /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = BD8624ED29A78F0B004F402C /* SDWebImage */; };
+		BD8624F129A790BA004F402C /* FuncForFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8624F029A790BA004F402C /* FuncForFirebase.swift */; };
 		BD89EF28299AB74A00CD428B /* SelectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD89EF26299AB74A00CD428B /* SelectCell.swift */; };
 		BD89EF29299AB74A00CD428B /* SelectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD89EF27299AB74A00CD428B /* SelectCell.xib */; };
 		BDA063F7297878B200B3E247 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA063F6297878B200B3E247 /* AppDelegate.swift */; };
@@ -63,6 +66,8 @@
 		BD43FC95299E60410025755B /* MogilevController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MogilevController.xib; sourceTree = "<group>"; };
 		BD8001D829787E2F00DEFA45 /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
 		BD8001D929787E2F00DEFA45 /* FavouriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteViewController.xib; sourceTree = "<group>"; };
+		BD8624EA29A54F60004F402C /* RegionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionModel.swift; sourceTree = "<group>"; };
+		BD8624F029A790BA004F402C /* FuncForFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuncForFirebase.swift; sourceTree = "<group>"; };
 		BD89EF26299AB74A00CD428B /* SelectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCell.swift; sourceTree = "<group>"; };
 		BD89EF27299AB74A00CD428B /* SelectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectCell.xib; sourceTree = "<group>"; };
 		BDA063F3297878B200B3E247 /* Sanatorium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sanatorium.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD8624EE29A78F0B004F402C /* SDWebImage in Frameworks */,
 				BDD0358129A4E13B000FECEB /* FirebaseDatabase in Frameworks */,
 				BDD0358329A4E13B000FECEB /* FirebaseFirestore in Frameworks */,
 				BBF47DC967E237BE849C1AA8 /* Pods_Sanatorium.framework in Frameworks */,
@@ -193,6 +199,22 @@
 			path = FavouriteViewController;
 			sourceTree = "<group>";
 		};
+		BD8624E929A54F44004F402C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BD8624EA29A54F60004F402C /* RegionModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BD8624EF29A79099004F402C /* FuncForFirebase */ = {
+			isa = PBXGroup;
+			children = (
+				BD8624F029A790BA004F402C /* FuncForFirebase.swift */,
+			);
+			path = FuncForFirebase;
+			sourceTree = "<group>";
+		};
 		BD89EF24299AB6DE00CD428B /* CollectionCells */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +253,8 @@
 		BDA063F5297878B200B3E247 /* Sanatorium */ = {
 			isa = PBXGroup;
 			children = (
+				BD8624EF29A79099004F402C /* FuncForFirebase */,
+				BD8624E929A54F44004F402C /* Models */,
 				BDE45085299ABCE30078F04E /* Enum */,
 				BD89EF24299AB6DE00CD428B /* CollectionCells */,
 				BDA0642429787CF500B3E247 /* TabBarController */,
@@ -341,6 +365,7 @@
 				BDD0358029A4E13B000FECEB /* FirebaseDatabase */,
 				BDD0358229A4E13B000FECEB /* FirebaseFirestore */,
 				BDD0358429A4E13B000FECEB /* FirebaseStorage */,
+				BD8624ED29A78F0B004F402C /* SDWebImage */,
 			);
 			productName = Sanatorium;
 			productReference = BDA063F3297878B200B3E247 /* Sanatorium.app */;
@@ -372,6 +397,7 @@
 			mainGroup = BDA063EA297878B100B3E247;
 			packageReferences = (
 				BDD0357D29A4E13B000FECEB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				BD8624EC29A78F0B004F402C /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = BDA063F4297878B200B3E247 /* Products */;
 			projectDirPath = "";
@@ -467,6 +493,8 @@
 				BD43FC85299E5FEB0025755B /* VitebskController.swift in Sources */,
 				BDA0641A29787CCB00B3E247 /* MapViewController.swift in Sources */,
 				BDE45088299ABD110078F04E /* EnumNames.swift in Sources */,
+				BD8624EB29A54F60004F402C /* RegionModel.swift in Sources */,
+				BD8624F129A790BA004F402C /* FuncForFirebase.swift in Sources */,
 				BD43FC7B299E5F8E0025755B /* BrestController.swift in Sources */,
 				BDA0642229787CE500B3E247 /* HomeViewController.swift in Sources */,
 				BDA063F9297878B200B3E247 /* SceneDelegate.swift in Sources */,
@@ -681,6 +709,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		BD8624EC29A78F0B004F402C /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		BDD0357D29A4E13B000FECEB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -692,6 +728,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		BD8624ED29A78F0B004F402C /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD8624EC29A78F0B004F402C /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
 		BDD0357E29A4E13B000FECEB /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = BDD0357D29A4E13B000FECEB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
