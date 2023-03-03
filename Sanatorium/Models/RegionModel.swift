@@ -8,8 +8,8 @@
 import UIKit
 
 struct RegionModel {
-    
     var city: String
     var imageURL: String
+    var ownerID: String
     
 }

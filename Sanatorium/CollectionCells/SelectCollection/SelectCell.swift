@@ -12,7 +12,6 @@ class SelectCell: UICollectionViewCell {
     static let id = String(describing: SelectCell.self)
     
     @IBOutlet weak var nameOfRegionLabel: UILabel!
-    
     @IBOutlet weak var imageOfRegion: UIImageView!
     
     override func awakeFromNib() {

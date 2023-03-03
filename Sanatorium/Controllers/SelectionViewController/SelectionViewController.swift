@@ -20,19 +20,11 @@ class SelectionViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    public enum DatabaseError:Error {
-            case failedToReturn
-        }
-    
-    private let database = Database.database().reference()
-    
     var massCityNames = [RegionModel]() {
         didSet {
             collectionView.reloadData()
         }
     }
-    
-    var sortedArray = [RegionModel]()
      
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,22 +35,8 @@ class SelectionViewController: UIViewController {
         collectionView.delegate = self
         
         getRegions()
-   
-        
-//        getAllUsers { result in
-//            switch result {
-//                case .success(let success):
-//                    for (_, value) in success {
-//                        let nameOfCity = RegionModel(city: value, imageURL: <#String#>)
-//                        self.massCityNames.append(nameOfCity)
-//                        self.sortedArray = self.massCityNames.sorted { $0.city < $1.city }
-//                    }
-//                case .failure(let failure):
-//                    print(failure)
-//            }
-//        }
-        
         registerCell()
+        setupNavBar()
         
         }
     
@@ -73,16 +51,22 @@ class SelectionViewController: UIViewController {
             }
         }
     
-//    public func getAllUsers(completion: @escaping(Result<[String:String], Error>) -> Void) {
-//            database.child("city").observeSingleEvent(of: .value) { snapshot in
-//                guard let value = snapshot.value as? [String:String] else {
-//                    completion(.failure(DatabaseError.failedToReturn))
-//                    return
-//                }
-//
-//                completion(.success(value))
-//            }
-//        }
+    private func setupNavBar() {
+        let button = UIButton()
+        button.addTarget(self, action: #selector(addSanatorium), for: .allEvents)
+        button.setImage(UIImage(systemName: "plus"), for: .normal)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: button)
+    }
+    
+    @objc func addSanatorium() {
+        let vc = ChoiceRegionController(nibName: "ChoiceRegionController", bundle: nil)
+        
+        vc.modalTransitionStyle = .crossDissolve
+        vc.modalPresentationStyle = .overFullScreen
+        self.navigationController!.present(vc, animated: true)
+        //self.navigationController!.pushViewController(vc, animated: true)
+    }
+    
 
     func registerCell() {
         let nib = UINib(nibName: SelectCell.id, bundle: nil)
@@ -97,14 +81,10 @@ extension SelectionViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        //let type = sortedArray[indexPath.row]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SelectCell.id, for: indexPath)
-        
         guard let nameCell = cell as? SelectCell else { return cell }
         
         let imageURL = URL(string: massCityNames[indexPath.row].imageURL)
-
         let city = String (massCityNames[indexPath.row].city)
                
         nameCell.setName(city: city, imageURL: imageURL)

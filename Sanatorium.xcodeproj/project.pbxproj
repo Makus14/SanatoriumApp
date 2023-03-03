@@ -25,6 +25,15 @@
 		BD8624EB29A54F60004F402C /* RegionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8624EA29A54F60004F402C /* RegionModel.swift */; };
 		BD8624EE29A78F0B004F402C /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = BD8624ED29A78F0B004F402C /* SDWebImage */; };
 		BD8624F129A790BA004F402C /* FuncForFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8624F029A790BA004F402C /* FuncForFirebase.swift */; };
+		BD8624F529A93456004F402C /* AddNewSanatoriumController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8624F329A93456004F402C /* AddNewSanatoriumController.swift */; };
+		BD8624F629A93456004F402C /* AddNewSanatoriumController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD8624F429A93456004F402C /* AddNewSanatoriumController.xib */; };
+		BD8624FB29A94A3E004F402C /* ChoiceRegionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8624F929A94A3E004F402C /* ChoiceRegionController.swift */; };
+		BD8624FC29A94A3E004F402C /* ChoiceRegionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD8624FA29A94A3E004F402C /* ChoiceRegionController.xib */; };
+		BD8624FE29AA6EEF004F402C /* SanatoriumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8624FD29AA6EEF004F402C /* SanatoriumModel.swift */; };
+		BD86250029AABE3C004F402C /* AddSanatoriumResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8624FF29AABE3C004F402C /* AddSanatoriumResult.swift */; };
+		BD86250429AC070A004F402C /* FuncForBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD86250329AC070A004F402C /* FuncForBackground.swift */; };
+		BD86250829AC0B78004F402C /* SanatoriumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD86250629AC0B78004F402C /* SanatoriumCell.swift */; };
+		BD86250929AC0B78004F402C /* SanatoriumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD86250729AC0B78004F402C /* SanatoriumCell.xib */; };
 		BD89EF28299AB74A00CD428B /* SelectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD89EF26299AB74A00CD428B /* SelectCell.swift */; };
 		BD89EF29299AB74A00CD428B /* SelectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD89EF27299AB74A00CD428B /* SelectCell.xib */; };
 		BDA063F7297878B200B3E247 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA063F6297878B200B3E247 /* AppDelegate.swift */; };
@@ -45,7 +54,6 @@
 		BDD0358129A4E13B000FECEB /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = BDD0358029A4E13B000FECEB /* FirebaseDatabase */; };
 		BDD0358329A4E13B000FECEB /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = BDD0358229A4E13B000FECEB /* FirebaseFirestore */; };
 		BDD0358529A4E13B000FECEB /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = BDD0358429A4E13B000FECEB /* FirebaseStorage */; };
-		BDE45088299ABD110078F04E /* EnumNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE45087299ABD110078F04E /* EnumNames.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +76,15 @@
 		BD8001D929787E2F00DEFA45 /* FavouriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteViewController.xib; sourceTree = "<group>"; };
 		BD8624EA29A54F60004F402C /* RegionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionModel.swift; sourceTree = "<group>"; };
 		BD8624F029A790BA004F402C /* FuncForFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuncForFirebase.swift; sourceTree = "<group>"; };
+		BD8624F329A93456004F402C /* AddNewSanatoriumController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewSanatoriumController.swift; sourceTree = "<group>"; };
+		BD8624F429A93456004F402C /* AddNewSanatoriumController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNewSanatoriumController.xib; sourceTree = "<group>"; };
+		BD8624F929A94A3E004F402C /* ChoiceRegionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceRegionController.swift; sourceTree = "<group>"; };
+		BD8624FA29A94A3E004F402C /* ChoiceRegionController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChoiceRegionController.xib; sourceTree = "<group>"; };
+		BD8624FD29AA6EEF004F402C /* SanatoriumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanatoriumModel.swift; sourceTree = "<group>"; };
+		BD8624FF29AABE3C004F402C /* AddSanatoriumResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSanatoriumResult.swift; sourceTree = "<group>"; };
+		BD86250329AC070A004F402C /* FuncForBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuncForBackground.swift; sourceTree = "<group>"; };
+		BD86250629AC0B78004F402C /* SanatoriumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanatoriumCell.swift; sourceTree = "<group>"; };
+		BD86250729AC0B78004F402C /* SanatoriumCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SanatoriumCell.xib; sourceTree = "<group>"; };
 		BD89EF26299AB74A00CD428B /* SelectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCell.swift; sourceTree = "<group>"; };
 		BD89EF27299AB74A00CD428B /* SelectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectCell.xib; sourceTree = "<group>"; };
 		BDA063F3297878B200B3E247 /* Sanatorium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sanatorium.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,7 +103,6 @@
 		BDA0642129787CE500B3E247 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		BDA0642529787D1600B3E247 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		BDD0357B29A4DD71000FECEB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		BDE45087299ABD110078F04E /* EnumNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumNames.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				BD8624EA29A54F60004F402C /* RegionModel.swift */,
+				BD8624FD29AA6EEF004F402C /* SanatoriumModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -215,9 +232,63 @@
 			path = FuncForFirebase;
 			sourceTree = "<group>";
 		};
+		BD8624F229A93423004F402C /* AddNewSanatoriumController */ = {
+			isa = PBXGroup;
+			children = (
+				BD8624F329A93456004F402C /* AddNewSanatoriumController.swift */,
+				BD8624F429A93456004F402C /* AddNewSanatoriumController.xib */,
+			);
+			path = AddNewSanatoriumController;
+			sourceTree = "<group>";
+		};
+		BD8624F729A9498B004F402C /* AddSanatorium */ = {
+			isa = PBXGroup;
+			children = (
+				BD8624F829A949E9004F402C /* ChoiceRegion */,
+				BD8624F229A93423004F402C /* AddNewSanatoriumController */,
+			);
+			path = AddSanatorium;
+			sourceTree = "<group>";
+		};
+		BD8624F829A949E9004F402C /* ChoiceRegion */ = {
+			isa = PBXGroup;
+			children = (
+				BD8624F929A94A3E004F402C /* ChoiceRegionController.swift */,
+				BD8624FA29A94A3E004F402C /* ChoiceRegionController.xib */,
+			);
+			path = ChoiceRegion;
+			sourceTree = "<group>";
+		};
+		BD86250129AC06BB004F402C /* IndividualFunctions */ = {
+			isa = PBXGroup;
+			children = (
+				BD86250229AC06D9004F402C /* FuncForBackground */,
+				BD8624EF29A79099004F402C /* FuncForFirebase */,
+			);
+			path = IndividualFunctions;
+			sourceTree = "<group>";
+		};
+		BD86250229AC06D9004F402C /* FuncForBackground */ = {
+			isa = PBXGroup;
+			children = (
+				BD86250329AC070A004F402C /* FuncForBackground.swift */,
+			);
+			path = FuncForBackground;
+			sourceTree = "<group>";
+		};
+		BD86250529AC0B0A004F402C /* SelectSanatorium */ = {
+			isa = PBXGroup;
+			children = (
+				BD86250629AC0B78004F402C /* SanatoriumCell.swift */,
+				BD86250729AC0B78004F402C /* SanatoriumCell.xib */,
+			);
+			path = SelectSanatorium;
+			sourceTree = "<group>";
+		};
 		BD89EF24299AB6DE00CD428B /* CollectionCells */ = {
 			isa = PBXGroup;
 			children = (
+				BD86250529AC0B0A004F402C /* SelectSanatorium */,
 				BD89EF25299AB70E00CD428B /* SelectCollection */,
 			);
 			path = CollectionCells;
@@ -253,7 +324,7 @@
 		BDA063F5297878B200B3E247 /* Sanatorium */ = {
 			isa = PBXGroup;
 			children = (
-				BD8624EF29A79099004F402C /* FuncForFirebase */,
+				BD86250129AC06BB004F402C /* IndividualFunctions */,
 				BD8624E929A54F44004F402C /* Models */,
 				BDE45085299ABCE30078F04E /* Enum */,
 				BD89EF24299AB6DE00CD428B /* CollectionCells */,
@@ -272,6 +343,7 @@
 		BDA0640A29787BAA00B3E247 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BD8624F729A9498B004F402C /* AddSanatorium */,
 				BD8001D729787DBC00DEFA45 /* FavouriteViewController */,
 				BDA0641329787C6A00B3E247 /* SelectionViewController */,
 				BDA0641229787C5D00B3E247 /* MapViewController */,
@@ -329,17 +401,17 @@
 		BDE45085299ABCE30078F04E /* Enum */ = {
 			isa = PBXGroup;
 			children = (
-				BDE45086299ABCE90078F04E /* EnumNamesOfRegion */,
+				BDE45086299ABCE90078F04E /* EnumAddSanatoriumResult */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
 		};
-		BDE45086299ABCE90078F04E /* EnumNamesOfRegion */ = {
+		BDE45086299ABCE90078F04E /* EnumAddSanatoriumResult */ = {
 			isa = PBXGroup;
 			children = (
-				BDE45087299ABD110078F04E /* EnumNames.swift */,
+				BD8624FF29AABE3C004F402C /* AddSanatoriumResult.swift */,
 			);
-			path = EnumNamesOfRegion;
+			path = EnumAddSanatoriumResult;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,9 +493,12 @@
 				BDA0641F29787CD900B3E247 /* SearchViewController.xib in Resources */,
 				BD43FC8A299E60020025755B /* GomelController.xib in Resources */,
 				BD8001DB29787E2F00DEFA45 /* FavouriteViewController.xib in Resources */,
+				BD86250929AC0B78004F402C /* SanatoriumCell.xib in Resources */,
 				BD43FC8F299E601A0025755B /* GrodnoController.xib in Resources */,
+				BD8624F629A93456004F402C /* AddNewSanatoriumController.xib in Resources */,
 				BDA06400297878B600B3E247 /* Assets.xcassets in Resources */,
 				BD43FC86299E5FEB0025755B /* VitebskController.xib in Resources */,
+				BD8624FC29A94A3E004F402C /* ChoiceRegionController.xib in Resources */,
 				BDA0641B29787CCB00B3E247 /* MapViewController.xib in Resources */,
 				BD43FC97299E60410025755B /* MogilevController.xib in Resources */,
 				BDA0642329787CE500B3E247 /* HomeViewController.xib in Resources */,
@@ -485,18 +560,23 @@
 				BDA0642629787D1600B3E247 /* TabBarController.swift in Sources */,
 				BD43FC89299E60020025755B /* GomelController.swift in Sources */,
 				BD89EF28299AB74A00CD428B /* SelectCell.swift in Sources */,
+				BD86250429AC070A004F402C /* FuncForBackground.swift in Sources */,
 				BDA063F7297878B200B3E247 /* AppDelegate.swift in Sources */,
 				BDA0641629787CBE00B3E247 /* SelectionViewController.swift in Sources */,
 				BD8001DA29787E2F00DEFA45 /* FavouriteViewController.swift in Sources */,
+				BD8624FE29AA6EEF004F402C /* SanatoriumModel.swift in Sources */,
 				BD43FC92299E602C0025755B /* MinskController.swift in Sources */,
 				BD43FC96299E60410025755B /* MogilevController.swift in Sources */,
+				BD8624FB29A94A3E004F402C /* ChoiceRegionController.swift in Sources */,
 				BD43FC85299E5FEB0025755B /* VitebskController.swift in Sources */,
+				BD86250829AC0B78004F402C /* SanatoriumCell.swift in Sources */,
 				BDA0641A29787CCB00B3E247 /* MapViewController.swift in Sources */,
-				BDE45088299ABD110078F04E /* EnumNames.swift in Sources */,
 				BD8624EB29A54F60004F402C /* RegionModel.swift in Sources */,
 				BD8624F129A790BA004F402C /* FuncForFirebase.swift in Sources */,
 				BD43FC7B299E5F8E0025755B /* BrestController.swift in Sources */,
+				BD86250029AABE3C004F402C /* AddSanatoriumResult.swift in Sources */,
 				BDA0642229787CE500B3E247 /* HomeViewController.swift in Sources */,
+				BD8624F529A93456004F402C /* AddNewSanatoriumController.swift in Sources */,
 				BDA063F9297878B200B3E247 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
