@@ -75,8 +75,9 @@ extension BrestController: UICollectionViewDataSource {
         
         let nameOfSanatorium = String(massSanatorium[indexPath.row].name)
         let adressOfSanatorium = String(massSanatorium[indexPath.row].adress)
+        let imageURL = URL(string: massSanatorium[indexPath.row].imageURL)
         
-        sanCell.setSanatorium(name: nameOfSanatorium, city: adressOfSanatorium)
+        sanCell.setSanatorium(name: nameOfSanatorium, city: adressOfSanatorium, imageURL: imageURL)
         
         return sanCell
     }

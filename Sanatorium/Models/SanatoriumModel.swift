@@ -11,6 +11,7 @@ struct SanatoriumModel {
     var name: String
     var adress: String
     var id: String
+    var imageURL: String
     
 }
 
