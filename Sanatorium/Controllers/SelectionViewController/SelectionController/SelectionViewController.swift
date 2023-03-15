@@ -18,6 +18,13 @@ class SelectionViewController: UIViewController {
         return iv
     }()
     
+    private lazy var titleLabel: UILabel = {
+        let titleLabel = UILabel()
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 17.0)
+        titleLabel.text = "Выбор региона"
+        return titleLabel
+    }()
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     var massCityNames = [RegionModel]() {
@@ -29,7 +36,7 @@ class SelectionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.collectionView?.backgroundView = imageView
-        self.title = "Выбор региона"
+        navigationItem.titleView = titleLabel
         
         collectionView.dataSource = self
         collectionView.delegate = self

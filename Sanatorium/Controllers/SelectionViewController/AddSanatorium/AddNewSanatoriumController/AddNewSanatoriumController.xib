@@ -12,6 +12,7 @@
                 <outlet property="adressOfSanatoriumField" destination="tWL-Iz-tOp" id="bEm-P6-QUv"/>
                 <outlet property="nameOfSanatoriumField" destination="RBc-m0-Wn2" id="R2f-hb-aVA"/>
                 <outlet property="photoImageView" destination="jTd-SX-3zC" id="nAm-4D-ODk"/>
+                <outlet property="telefonField" destination="uWf-ZW-9i0" id="6eB-d4-vV0"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,13 +21,18 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RBc-m0-Wn2">
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Название санатория" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RBc-m0-Wn2">
                     <rect key="frame" x="10" y="294" width="373" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tWL-Iz-tOp">
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Адрес санатория" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tWL-Iz-tOp">
                     <rect key="frame" x="10" y="338" width="373" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Номер телефона" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uWf-ZW-9i0">
+                    <rect key="frame" x="10" y="382" width="373" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
@@ -39,7 +45,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqo-cs-eA5">
-                    <rect key="frame" x="10" y="392" width="373" height="35"/>
+                    <rect key="frame" x="10" y="426" width="373" height="35"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Добавить санаторий"/>
                     <connections>
@@ -58,19 +64,22 @@
             <color key="backgroundColor" red="0.81794255969999996" green="0.80965626239999999" blue="0.72155362369999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
                 <constraint firstItem="RBc-m0-Wn2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="AI8-Na-f4m"/>
+                <constraint firstItem="uWf-ZW-9i0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="NcO-mq-FnQ"/>
                 <constraint firstItem="tWL-Iz-tOp" firstAttribute="top" secondItem="RBc-m0-Wn2" secondAttribute="bottom" constant="10" id="OdD-fO-9qX"/>
                 <constraint firstItem="tWL-Iz-tOp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="Qss-iu-tMP"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tWL-Iz-tOp" secondAttribute="trailing" constant="10" id="SPf-Oo-hjo"/>
                 <constraint firstItem="RBc-m0-Wn2" firstAttribute="top" secondItem="Oop-yP-pH1" secondAttribute="bottom" constant="50" id="UKf-el-yI4"/>
                 <constraint firstItem="Oop-yP-pH1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="V0u-dk-DZu"/>
+                <constraint firstItem="uWf-ZW-9i0" firstAttribute="top" secondItem="tWL-Iz-tOp" secondAttribute="bottom" constant="10" id="XGB-Ca-gKn"/>
                 <constraint firstItem="hqo-cs-eA5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="Xtw-8i-5iY"/>
                 <constraint firstItem="jTd-SX-3zC" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Ykz-eK-IsB"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RBc-m0-Wn2" secondAttribute="trailing" constant="10" id="au0-Ne-SbZ"/>
                 <constraint firstItem="jTd-SX-3zC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="f5s-Gk-4mE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uWf-ZW-9i0" secondAttribute="trailing" constant="10" id="f7B-PW-Ck3"/>
                 <constraint firstItem="Oop-yP-pH1" firstAttribute="top" secondItem="jTd-SX-3zC" secondAttribute="bottom" constant="20" id="guh-bF-Dn0"/>
+                <constraint firstItem="hqo-cs-eA5" firstAttribute="top" secondItem="uWf-ZW-9i0" secondAttribute="bottom" constant="10" id="iMK-VO-33u"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Oop-yP-pH1" secondAttribute="trailing" constant="10" id="oyt-pH-2UZ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hqo-cs-eA5" secondAttribute="trailing" constant="10" id="ozG-7H-SF5"/>
-                <constraint firstItem="hqo-cs-eA5" firstAttribute="top" secondItem="tWL-Iz-tOp" secondAttribute="bottom" constant="20" id="rPy-E2-ROG"/>
             </constraints>
             <point key="canvasLocation" x="117" y="20"/>
         </view>

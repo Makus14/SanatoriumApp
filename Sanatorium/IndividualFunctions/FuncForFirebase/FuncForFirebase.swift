@@ -59,9 +59,17 @@ class FuncForFirebase {
                     guard let nameOfSanatorium = data["nameOfSanatorium"] as? String else { return }
                     guard let adressOfSanatorium = data["adressOfSanatorium"] as? String else { return }
                     guard let id = data["id"] as? String else { return }
-                    guard let imageURL = data["imageURL"] as? String else {return}
+                    guard let imageURL = data["imageURL"] as? String else { return }
+                    guard let telefon = data["telefon"] as? String else { return }
+                    let sanatoriumModel = SanatoriumModel()
+                    sanatoriumModel.name = nameOfSanatorium
+                    sanatoriumModel.adress = adressOfSanatorium
+                    sanatoriumModel.id = id
+                    sanatoriumModel.imageURL = imageURL
+                    sanatoriumModel.telefon = telefon
                     
-                    let sanatoriumModel = SanatoriumModel(name: nameOfSanatorium, adress: adressOfSanatorium, id: id, imageURL: imageURL)
+                    
+//                    sanatoriumModel = SanatoriumModel(name: nameOfSanatorium, adress: adressOfSanatorium, id: id, imageURL: imageURL, telefon: telefon)
                     sanatoriumArray.append(sanatoriumModel)
                 }
                 completion(.success(sanatoriumArray))

@@ -20,22 +20,22 @@
                         <rect key="frame" x="0.0" y="10" width="396" height="125"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="archivebox.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="WSP-xA-rwr">
-                                <rect key="frame" x="10" y="39.333333333333329" width="50" height="46.999999999999986"/>
+                                <rect key="frame" x="10" y="44.333333333333329" width="40" height="36.999999999999986"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="chc-3t-NyU"/>
-                                    <constraint firstAttribute="height" constant="50" id="vQR-EC-Mui"/>
+                                    <constraint firstAttribute="width" constant="40" id="chc-3t-NyU"/>
+                                    <constraint firstAttribute="height" constant="40" id="vQR-EC-Mui"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVL-un-Gdy">
                                 <rect key="frame" x="346" y="45" width="40" height="35"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.25658550860000001" green="0.22589284179999999" blue="0.050911910829999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="chevron.right" catalog="system"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rem-vU-7ew">
-                                <rect key="frame" x="70" y="52.666666666666664" width="51.333333333333343" height="19.999999999999993"/>
+                                <rect key="frame" x="60" y="52.666666666666664" width="51.333333333333343" height="19.999999999999993"/>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.25658550860000001" green="0.22589284179999999" blue="0.050911910829999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -62,6 +62,7 @@
             <connections>
                 <outlet property="imageOfRegion" destination="WSP-xA-rwr" id="aVT-LJ-SCv"/>
                 <outlet property="nameOfRegionLabel" destination="Rem-vU-7ew" id="Mib-K2-AbG"/>
+                <outlet property="viewContent" destination="fER-Km-ZBU" id="f1w-fm-Lht"/>
             </connections>
             <point key="canvasLocation" x="421.37404580152668" y="49.647887323943664"/>
         </collectionViewCell>

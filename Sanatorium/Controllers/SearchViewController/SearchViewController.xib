@@ -4,11 +4,15 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="Sanatorium" customModuleProvider="target">
             <connections>
+                <outlet property="collectionView" destination="AcW-4K-rtP" id="XyZ-le-e6d"/>
+                <outlet property="searchFieldOutlet" destination="9JM-kI-Tun" id="5hZ-SB-ifp"/>
+                <outlet property="searchView" destination="6Ek-Lv-alr" id="cuq-kh-Jj5"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,9 +20,75 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ek-Lv-alr">
+                    <rect key="frame" x="10" y="69" width="303" height="50"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Поиск по санаториям" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9JM-kI-Tun">
+                            <rect key="frame" x="35.333333333333329" y="5" width="252.66666666666669" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4Ug-iz-8Ng">
+                            <rect key="frame" x="9.9999999999999982" y="0.99999999999999645" width="20.333333333333329" height="48.333333333333329"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="4Ug-iz-8Ng" firstAttribute="leading" secondItem="6Ek-Lv-alr" secondAttribute="leading" constant="10" id="8D9-iO-NNj"/>
+                        <constraint firstItem="9JM-kI-Tun" firstAttribute="top" secondItem="6Ek-Lv-alr" secondAttribute="top" constant="5" id="9DC-9a-jI9"/>
+                        <constraint firstItem="9JM-kI-Tun" firstAttribute="leading" secondItem="4Ug-iz-8Ng" secondAttribute="trailing" constant="5" id="LZ1-YH-enc"/>
+                        <constraint firstItem="4Ug-iz-8Ng" firstAttribute="top" secondItem="6Ek-Lv-alr" secondAttribute="top" id="dTo-g1-wD4"/>
+                        <constraint firstAttribute="bottom" secondItem="9JM-kI-Tun" secondAttribute="bottom" constant="5" id="fzZ-Hd-zgw"/>
+                        <constraint firstAttribute="bottom" secondItem="4Ug-iz-8Ng" secondAttribute="bottom" id="t9p-CV-IxL"/>
+                        <constraint firstAttribute="height" constant="50" id="tBH-KN-PHe"/>
+                        <constraint firstAttribute="trailing" secondItem="9JM-kI-Tun" secondAttribute="trailing" constant="15" id="yYH-Wm-K0S"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="AcW-4K-rtP">
+                    <rect key="frame" x="0.0" y="129" width="393" height="689"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="a4D-MT-xlv">
+                        <size key="itemSize" width="380" height="150"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qht-N7-Rkc">
+                    <rect key="frame" x="313" y="59" width="80" height="70"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Найти"/>
+                    <connections>
+                        <action selector="searchAction:" destination="-1" eventType="touchUpInside" id="qkO-1T-9YV"/>
+                    </connections>
+                </button>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.81794255969999996" green="0.80965626239999999" blue="0.72155362369999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-            <point key="canvasLocation" x="117" y="20"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6Ek-Lv-alr" secondAttribute="trailing" constant="80" id="7g4-X3-CTi"/>
+                <constraint firstItem="Qht-N7-Rkc" firstAttribute="leading" secondItem="6Ek-Lv-alr" secondAttribute="trailing" id="9QL-e9-K63"/>
+                <constraint firstItem="AcW-4K-rtP" firstAttribute="top" secondItem="6Ek-Lv-alr" secondAttribute="bottom" constant="10" id="CCu-Oz-nbv"/>
+                <constraint firstItem="Qht-N7-Rkc" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="L7x-vD-N8c"/>
+                <constraint firstItem="6Ek-Lv-alr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="Oph-dt-vx8"/>
+                <constraint firstItem="AcW-4K-rtP" firstAttribute="top" secondItem="Qht-N7-Rkc" secondAttribute="bottom" id="WhT-9f-P4Q"/>
+                <constraint firstItem="AcW-4K-rtP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Y7T-hP-KiV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AcW-4K-rtP" secondAttribute="trailing" id="i66-kj-fzy"/>
+                <constraint firstItem="6Ek-Lv-alr" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="kls-xk-GAi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="AcW-4K-rtP" secondAttribute="bottom" id="s3W-iX-3K7"/>
+                <constraint firstItem="Qht-N7-Rkc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="tIj-hH-Erx"/>
+            </constraints>
+            <point key="canvasLocation" x="116.79389312977099" y="19.718309859154932"/>
         </view>
     </objects>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

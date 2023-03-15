@@ -54,6 +54,17 @@
 		BDD0358129A4E13B000FECEB /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = BDD0358029A4E13B000FECEB /* FirebaseDatabase */; };
 		BDD0358329A4E13B000FECEB /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = BDD0358229A4E13B000FECEB /* FirebaseFirestore */; };
 		BDD0358529A4E13B000FECEB /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = BDD0358429A4E13B000FECEB /* FirebaseStorage */; };
+		BDE3A09529BB6DC800A557A1 /* SanatoriumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE3A09329BB6DC800A557A1 /* SanatoriumViewController.swift */; };
+		BDE3A09629BB6DC800A557A1 /* SanatoriumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDE3A09429BB6DC800A557A1 /* SanatoriumViewController.xib */; };
+		BDF09AFD29BC705B0008E26C /* SanatoriumCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF09AFB29BC705B0008E26C /* SanatoriumCollectionCell.swift */; };
+		BDF09AFE29BC705B0008E26C /* SanatoriumCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDF09AFC29BC705B0008E26C /* SanatoriumCollectionCell.xib */; };
+		BDF09B0129BDC3260008E26C /* DefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF09B0029BDC3260008E26C /* DefaultsManager.swift */; };
+		BDF09B0429BF84DA0008E26C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BDF09B0329BF84DA0008E26C /* SnapKit */; };
+		BDF09B0C29BF9F110008E26C /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF09B0A29BF9F110008E26C /* ServicesViewController.swift */; };
+		BDF09B0D29BF9F110008E26C /* ServicesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDF09B0B29BF9F110008E26C /* ServicesViewController.xib */; };
+		BDF09B1029BF9F6A0008E26C /* RoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF09B0E29BF9F6A0008E26C /* RoomsViewController.swift */; };
+		BDF09B1129BF9F6A0008E26C /* RoomsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDF09B0F29BF9F6A0008E26C /* RoomsViewController.xib */; };
+		BDF09B1529C079B70008E26C /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF09B1429C079B70008E26C /* RealmManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,6 +114,16 @@
 		BDA0642129787CE500B3E247 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		BDA0642529787D1600B3E247 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		BDD0357B29A4DD71000FECEB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BDE3A09329BB6DC800A557A1 /* SanatoriumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanatoriumViewController.swift; sourceTree = "<group>"; };
+		BDE3A09429BB6DC800A557A1 /* SanatoriumViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SanatoriumViewController.xib; sourceTree = "<group>"; };
+		BDF09AFB29BC705B0008E26C /* SanatoriumCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanatoriumCollectionCell.swift; sourceTree = "<group>"; };
+		BDF09AFC29BC705B0008E26C /* SanatoriumCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SanatoriumCollectionCell.xib; sourceTree = "<group>"; };
+		BDF09B0029BDC3260008E26C /* DefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsManager.swift; sourceTree = "<group>"; };
+		BDF09B0A29BF9F110008E26C /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
+		BDF09B0B29BF9F110008E26C /* ServicesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServicesViewController.xib; sourceTree = "<group>"; };
+		BDF09B0E29BF9F6A0008E26C /* RoomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsViewController.swift; sourceTree = "<group>"; };
+		BDF09B0F29BF9F6A0008E26C /* RoomsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomsViewController.xib; sourceTree = "<group>"; };
+		BDF09B1429C079B70008E26C /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +134,7 @@
 				BD8624EE29A78F0B004F402C /* SDWebImage in Frameworks */,
 				BDD0358129A4E13B000FECEB /* FirebaseDatabase in Frameworks */,
 				BDD0358329A4E13B000FECEB /* FirebaseFirestore in Frameworks */,
+				BDF09B0429BF84DA0008E26C /* SnapKit in Frameworks */,
 				BBF47DC967E237BE849C1AA8 /* Pods_Sanatorium.framework in Frameworks */,
 				BDD0358529A4E13B000FECEB /* FirebaseStorage in Frameworks */,
 				BDD0357F29A4E13B000FECEB /* FirebaseAuth in Frameworks */,
@@ -288,19 +310,20 @@
 		BD89EF24299AB6DE00CD428B /* CollectionCells */ = {
 			isa = PBXGroup;
 			children = (
+				BDE3A09729BB944700A557A1 /* SanatoriumCells */,
 				BD86250529AC0B0A004F402C /* SelectSanatorium */,
-				BD89EF25299AB70E00CD428B /* SelectCollection */,
+				BD89EF25299AB70E00CD428B /* SelectRegionCollection */,
 			);
 			path = CollectionCells;
 			sourceTree = "<group>";
 		};
-		BD89EF25299AB70E00CD428B /* SelectCollection */ = {
+		BD89EF25299AB70E00CD428B /* SelectRegionCollection */ = {
 			isa = PBXGroup;
 			children = (
 				BD89EF26299AB74A00CD428B /* SelectCell.swift */,
 				BD89EF27299AB74A00CD428B /* SelectCell.xib */,
 			);
-			path = SelectCollection;
+			path = SelectRegionCollection;
 			sourceTree = "<group>";
 		};
 		BDA063EA297878B100B3E247 = {
@@ -324,6 +347,7 @@
 		BDA063F5297878B200B3E247 /* Sanatorium */ = {
 			isa = PBXGroup;
 			children = (
+				BDF09B1329C079950008E26C /* Manager */,
 				BD86250129AC06BB004F402C /* IndividualFunctions */,
 				BD8624E929A54F44004F402C /* Models */,
 				BDE45085299ABCE30078F04E /* Enum */,
@@ -343,7 +367,6 @@
 		BDA0640A29787BAA00B3E247 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BD8624F729A9498B004F402C /* AddSanatorium */,
 				BD8001D729787DBC00DEFA45 /* FavouriteViewController */,
 				BDA0641329787C6A00B3E247 /* SelectionViewController */,
 				BDA0641229787C5D00B3E247 /* MapViewController */,
@@ -383,9 +406,12 @@
 		BDA0641329787C6A00B3E247 /* SelectionViewController */ = {
 			isa = PBXGroup;
 			children = (
+				BDF09B0929BF9ECC0008E26C /* ServicesController */,
+				BDF09B0829BF9DF60008E26C /* RoomsController */,
+				BDE3A09229BB6D9F00A557A1 /* SanatoriumController */,
+				BD8624F729A9498B004F402C /* AddSanatorium */,
+				BDF09B0729BF9CC00008E26C /* SelectionController */,
 				BD43FC77299E5F4F0025755B /* SelectRegion */,
-				BDA0641429787CBE00B3E247 /* SelectionViewController.swift */,
-				BDA0641529787CBE00B3E247 /* SelectionViewController.xib */,
 			);
 			path = SelectionViewController;
 			sourceTree = "<group>";
@@ -396,6 +422,24 @@
 				BDA0642529787D1600B3E247 /* TabBarController.swift */,
 			);
 			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		BDE3A09229BB6D9F00A557A1 /* SanatoriumController */ = {
+			isa = PBXGroup;
+			children = (
+				BDE3A09329BB6DC800A557A1 /* SanatoriumViewController.swift */,
+				BDE3A09429BB6DC800A557A1 /* SanatoriumViewController.xib */,
+			);
+			path = SanatoriumController;
+			sourceTree = "<group>";
+		};
+		BDE3A09729BB944700A557A1 /* SanatoriumCells */ = {
+			isa = PBXGroup;
+			children = (
+				BDF09AFB29BC705B0008E26C /* SanatoriumCollectionCell.swift */,
+				BDF09AFC29BC705B0008E26C /* SanatoriumCollectionCell.xib */,
+			);
+			path = SanatoriumCells;
 			sourceTree = "<group>";
 		};
 		BDE45085299ABCE30078F04E /* Enum */ = {
@@ -414,6 +458,58 @@
 			path = EnumAddSanatoriumResult;
 			sourceTree = "<group>";
 		};
+		BDF09AFF29BDC2E30008E26C /* DefaultsManager */ = {
+			isa = PBXGroup;
+			children = (
+				BDF09B0029BDC3260008E26C /* DefaultsManager.swift */,
+			);
+			path = DefaultsManager;
+			sourceTree = "<group>";
+		};
+		BDF09B0729BF9CC00008E26C /* SelectionController */ = {
+			isa = PBXGroup;
+			children = (
+				BDA0641429787CBE00B3E247 /* SelectionViewController.swift */,
+				BDA0641529787CBE00B3E247 /* SelectionViewController.xib */,
+			);
+			path = SelectionController;
+			sourceTree = "<group>";
+		};
+		BDF09B0829BF9DF60008E26C /* RoomsController */ = {
+			isa = PBXGroup;
+			children = (
+				BDF09B0E29BF9F6A0008E26C /* RoomsViewController.swift */,
+				BDF09B0F29BF9F6A0008E26C /* RoomsViewController.xib */,
+			);
+			path = RoomsController;
+			sourceTree = "<group>";
+		};
+		BDF09B0929BF9ECC0008E26C /* ServicesController */ = {
+			isa = PBXGroup;
+			children = (
+				BDF09B0A29BF9F110008E26C /* ServicesViewController.swift */,
+				BDF09B0B29BF9F110008E26C /* ServicesViewController.xib */,
+			);
+			path = ServicesController;
+			sourceTree = "<group>";
+		};
+		BDF09B1229C0797C0008E26C /* RealmManager */ = {
+			isa = PBXGroup;
+			children = (
+				BDF09B1429C079B70008E26C /* RealmManager.swift */,
+			);
+			path = RealmManager;
+			sourceTree = "<group>";
+		};
+		BDF09B1329C079950008E26C /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BDF09AFF29BDC2E30008E26C /* DefaultsManager */,
+				BDF09B1229C0797C0008E26C /* RealmManager */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -426,6 +522,7 @@
 				BDA063F0297878B200B3E247 /* Frameworks */,
 				BDA063F1297878B200B3E247 /* Resources */,
 				CCEFD029E9D0AEF446C6FDE3 /* [CP] Copy Pods Resources */,
+				C0A99E95D3A4CF0C598DC4E9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -438,6 +535,7 @@
 				BDD0358229A4E13B000FECEB /* FirebaseFirestore */,
 				BDD0358429A4E13B000FECEB /* FirebaseStorage */,
 				BD8624ED29A78F0B004F402C /* SDWebImage */,
+				BDF09B0329BF84DA0008E26C /* SnapKit */,
 			);
 			productName = Sanatorium;
 			productReference = BDA063F3297878B200B3E247 /* Sanatorium.app */;
@@ -469,7 +567,8 @@
 			mainGroup = BDA063EA297878B100B3E247;
 			packageReferences = (
 				BDD0357D29A4E13B000FECEB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				BD8624EC29A78F0B004F402C /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				BD8624EC29A78F0B004F402C /* XCRemoteSwiftPackageReference "SDWebImage.git" */,
+				BDF09B0229BF84D90008E26C /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = BDA063F4297878B200B3E247 /* Products */;
 			projectDirPath = "";
@@ -487,11 +586,15 @@
 			files = (
 				BDA06403297878B600B3E247 /* LaunchScreen.storyboard in Resources */,
 				BDA0641729787CBE00B3E247 /* SelectionViewController.xib in Resources */,
+				BDF09B0D29BF9F110008E26C /* ServicesViewController.xib in Resources */,
+				BDF09B1129BF9F6A0008E26C /* RoomsViewController.xib in Resources */,
 				BDD0357C29A4DD72000FECEB /* GoogleService-Info.plist in Resources */,
 				BD43FC7C299E5F8E0025755B /* BrestController.xib in Resources */,
+				BDE3A09629BB6DC800A557A1 /* SanatoriumViewController.xib in Resources */,
 				BD43FC93299E602C0025755B /* MinskController.xib in Resources */,
 				BDA0641F29787CD900B3E247 /* SearchViewController.xib in Resources */,
 				BD43FC8A299E60020025755B /* GomelController.xib in Resources */,
+				BDF09AFE29BC705B0008E26C /* SanatoriumCollectionCell.xib in Resources */,
 				BD8001DB29787E2F00DEFA45 /* FavouriteViewController.xib in Resources */,
 				BD86250929AC0B78004F402C /* SanatoriumCell.xib in Resources */,
 				BD43FC8F299E601A0025755B /* GrodnoController.xib in Resources */,
@@ -531,6 +634,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C0A99E95D3A4CF0C598DC4E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sanatorium/Pods-Sanatorium-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sanatorium/Pods-Sanatorium-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sanatorium/Pods-Sanatorium-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		CCEFD029E9D0AEF446C6FDE3 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -558,7 +678,10 @@
 				BD43FC8E299E601A0025755B /* GrodnoController.swift in Sources */,
 				BDA0641E29787CD900B3E247 /* SearchViewController.swift in Sources */,
 				BDA0642629787D1600B3E247 /* TabBarController.swift in Sources */,
+				BDF09B1029BF9F6A0008E26C /* RoomsViewController.swift in Sources */,
+				BDE3A09529BB6DC800A557A1 /* SanatoriumViewController.swift in Sources */,
 				BD43FC89299E60020025755B /* GomelController.swift in Sources */,
+				BDF09AFD29BC705B0008E26C /* SanatoriumCollectionCell.swift in Sources */,
 				BD89EF28299AB74A00CD428B /* SelectCell.swift in Sources */,
 				BD86250429AC070A004F402C /* FuncForBackground.swift in Sources */,
 				BDA063F7297878B200B3E247 /* AppDelegate.swift in Sources */,
@@ -566,16 +689,19 @@
 				BD8001DA29787E2F00DEFA45 /* FavouriteViewController.swift in Sources */,
 				BD8624FE29AA6EEF004F402C /* SanatoriumModel.swift in Sources */,
 				BD43FC92299E602C0025755B /* MinskController.swift in Sources */,
+				BDF09B1529C079B70008E26C /* RealmManager.swift in Sources */,
 				BD43FC96299E60410025755B /* MogilevController.swift in Sources */,
 				BD8624FB29A94A3E004F402C /* ChoiceRegionController.swift in Sources */,
 				BD43FC85299E5FEB0025755B /* VitebskController.swift in Sources */,
 				BD86250829AC0B78004F402C /* SanatoriumCell.swift in Sources */,
 				BDA0641A29787CCB00B3E247 /* MapViewController.swift in Sources */,
 				BD8624EB29A54F60004F402C /* RegionModel.swift in Sources */,
+				BDF09B0129BDC3260008E26C /* DefaultsManager.swift in Sources */,
 				BD8624F129A790BA004F402C /* FuncForFirebase.swift in Sources */,
 				BD43FC7B299E5F8E0025755B /* BrestController.swift in Sources */,
 				BD86250029AABE3C004F402C /* AddSanatoriumResult.swift in Sources */,
 				BDA0642229787CE500B3E247 /* HomeViewController.swift in Sources */,
+				BDF09B0C29BF9F110008E26C /* ServicesViewController.swift in Sources */,
 				BD8624F529A93456004F402C /* AddNewSanatoriumController.swift in Sources */,
 				BDA063F9297878B200B3E247 /* SceneDelegate.swift in Sources */,
 			);
@@ -789,7 +915,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		BD8624EC29A78F0B004F402C /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+		BD8624EC29A78F0B004F402C /* XCRemoteSwiftPackageReference "SDWebImage.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
 			requirement = {
@@ -805,12 +931,20 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		BDF09B0229BF84D90008E26C /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		BD8624ED29A78F0B004F402C /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BD8624EC29A78F0B004F402C /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			package = BD8624EC29A78F0B004F402C /* XCRemoteSwiftPackageReference "SDWebImage.git" */;
 			productName = SDWebImage;
 		};
 		BDD0357E29A4E13B000FECEB /* FirebaseAuth */ = {
@@ -832,6 +966,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = BDD0357D29A4E13B000FECEB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		BDF09B0329BF84DA0008E26C /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BDF09B0229BF84D90008E26C /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

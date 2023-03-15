@@ -60,7 +60,12 @@ class MinskController: UIViewController {
 }
 
 extension MinskController: UICollectionViewDelegate {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let vcSanatorium = SanatoriumViewController(nibName: "SanatoriumViewController", bundle: nil)
+        vcSanatorium.sanatoriumInfo = self.massSanatorium[indexPath.row]
+        self.navigationController!.pushViewController(vcSanatorium, animated: true)
+    }
 }
 
 extension MinskController: UICollectionViewDataSource {

@@ -7,11 +7,17 @@
 
 import UIKit
 
-struct SanatoriumModel {
-    var name: String
-    var adress: String
-    var id: String
-    var imageURL: String
+class SanatoriumModel {
+
+    var name: String = ""
+    var adress: String = ""
+    var id: String = ""
+    var imageURL: String = ""
+    var gps_x: String = ""
+    var gps_y: String = ""
+    var telefon: String = ""
+    
+     init() {}
     
 }
 

@@ -32,3 +32,4 @@ class SanatoriumCell: UICollectionViewCell {
     }
 
 }
+

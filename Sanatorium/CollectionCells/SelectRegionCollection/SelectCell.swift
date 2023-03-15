@@ -13,10 +13,11 @@ class SelectCell: UICollectionViewCell {
     
     @IBOutlet weak var nameOfRegionLabel: UILabel!
     @IBOutlet weak var imageOfRegion: UIImageView!
+    @IBOutlet weak var viewContent: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        viewContent.layer.cornerRadius = 12
     }
 
     func setName(city: String, imageURL: URL?) {

@@ -1,20 +1,19 @@
 //
-//  FavouriteViewController.swift
+//  RoomsViewController.swift
 //  Sanatorium
 //
-//  Created by Mac on 18/01/2023.
+//  Created by Mac on 13/03/2023.
 //
 
 import UIKit
 
-class FavouriteViewController: UIViewController {
+class RoomsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         
     }
-
 
 
 }

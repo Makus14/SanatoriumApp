@@ -40,7 +40,7 @@ final class TabBarController: UITabBarController {
             $1.tabBarItem.title = dataSource[$0].title
             $1.tabBarItem.image = UIImage(systemName: dataSource[$0].iconName)
             tabBar.tintColor = .white
-            //tabBar.backgroundColor = .green
+            tabBar.backgroundColor = UIColor(red: 209/255, green: 206/255, blue: 184/255, alpha: 1)
         }
     }
     

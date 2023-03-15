@@ -16,6 +16,7 @@ class AddNewSanatoriumController: UIViewController {
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var nameOfSanatoriumField: UITextField!
     @IBOutlet weak var adressOfSanatoriumField: UITextField!
+    @IBOutlet weak var telefonField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +31,8 @@ class AddNewSanatoriumController: UIViewController {
         db.collection("sanatoriums").addDocument(data: [
             "nameOfSanatorium": self.nameOfSanatoriumField.text!,
             "adressOfSanatorium": self.adressOfSanatoriumField.text!,
-            "id": ownerIdOfRegion!
+            "id": ownerIdOfRegion!,
+            "telefon": telefonField.text!
             
         ]) { (error) in
             if let error = error {
