@@ -13,8 +13,8 @@ class SanatoriumModel {
     var adress: String = ""
     var id: String = ""
     var imageURL: String = ""
-    var gps_x: String = ""
-    var gps_y: String = ""
+    var lat: String = ""
+    var lon: String = ""
     var telefon: String = ""
     
      init() {}

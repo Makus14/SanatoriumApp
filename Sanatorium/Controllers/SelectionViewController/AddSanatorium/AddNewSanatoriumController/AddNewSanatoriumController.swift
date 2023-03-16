@@ -17,6 +17,8 @@ class AddNewSanatoriumController: UIViewController {
     @IBOutlet weak var nameOfSanatoriumField: UITextField!
     @IBOutlet weak var adressOfSanatoriumField: UITextField!
     @IBOutlet weak var telefonField: UITextField!
+    @IBOutlet weak var latField: UITextField!
+    @IBOutlet weak var lonField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +34,10 @@ class AddNewSanatoriumController: UIViewController {
             "nameOfSanatorium": self.nameOfSanatoriumField.text!,
             "adressOfSanatorium": self.adressOfSanatoriumField.text!,
             "id": ownerIdOfRegion!,
-            "telefon": telefonField.text!
+            "telefon": telefonField.text!,
+            "lat": latField.text!,
+            "lon": lonField.text!
+            
             
         ]) { (error) in
             if let error = error {

@@ -10,6 +10,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddNewSanatoriumController" customModule="Sanatorium" customModuleProvider="target">
             <connections>
                 <outlet property="adressOfSanatoriumField" destination="tWL-Iz-tOp" id="bEm-P6-QUv"/>
+                <outlet property="latField" destination="7XQ-ly-FZ2" id="2sc-A1-5KB"/>
+                <outlet property="lonField" destination="VkZ-2Q-dC1" id="vYU-T5-TlW"/>
                 <outlet property="nameOfSanatoriumField" destination="RBc-m0-Wn2" id="R2f-hb-aVA"/>
                 <outlet property="photoImageView" destination="jTd-SX-3zC" id="nAm-4D-ODk"/>
                 <outlet property="telefonField" destination="uWf-ZW-9i0" id="6eB-d4-vV0"/>
@@ -45,7 +47,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqo-cs-eA5">
-                    <rect key="frame" x="10" y="426" width="373" height="35"/>
+                    <rect key="frame" x="10" y="524" width="373" height="35"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Добавить санаторий"/>
                     <connections>
@@ -59,17 +61,32 @@
                         <constraint firstAttribute="width" constant="100" id="kH9-st-jQR"/>
                     </constraints>
                 </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="lat" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7XQ-ly-FZ2">
+                    <rect key="frame" x="10" y="426" width="373" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="lon" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VkZ-2Q-dC1">
+                    <rect key="frame" x="10" y="470" width="373" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.81794255969999996" green="0.80965626239999999" blue="0.72155362369999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
+                <constraint firstItem="7XQ-ly-FZ2" firstAttribute="top" secondItem="uWf-ZW-9i0" secondAttribute="bottom" constant="10" id="7tK-ym-8JE"/>
                 <constraint firstItem="RBc-m0-Wn2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="AI8-Na-f4m"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VkZ-2Q-dC1" secondAttribute="trailing" constant="10" id="E7Y-5M-9a1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7XQ-ly-FZ2" secondAttribute="trailing" constant="10" id="Lcg-tE-m0q"/>
                 <constraint firstItem="uWf-ZW-9i0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="NcO-mq-FnQ"/>
+                <constraint firstItem="VkZ-2Q-dC1" firstAttribute="top" secondItem="7XQ-ly-FZ2" secondAttribute="bottom" constant="10" id="OGR-MB-fuH"/>
                 <constraint firstItem="tWL-Iz-tOp" firstAttribute="top" secondItem="RBc-m0-Wn2" secondAttribute="bottom" constant="10" id="OdD-fO-9qX"/>
                 <constraint firstItem="tWL-Iz-tOp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="Qss-iu-tMP"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tWL-Iz-tOp" secondAttribute="trailing" constant="10" id="SPf-Oo-hjo"/>
                 <constraint firstItem="RBc-m0-Wn2" firstAttribute="top" secondItem="Oop-yP-pH1" secondAttribute="bottom" constant="50" id="UKf-el-yI4"/>
                 <constraint firstItem="Oop-yP-pH1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="V0u-dk-DZu"/>
+                <constraint firstItem="VkZ-2Q-dC1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="Wdw-I9-36g"/>
                 <constraint firstItem="uWf-ZW-9i0" firstAttribute="top" secondItem="tWL-Iz-tOp" secondAttribute="bottom" constant="10" id="XGB-Ca-gKn"/>
                 <constraint firstItem="hqo-cs-eA5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="Xtw-8i-5iY"/>
                 <constraint firstItem="jTd-SX-3zC" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Ykz-eK-IsB"/>
@@ -77,9 +94,10 @@
                 <constraint firstItem="jTd-SX-3zC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="f5s-Gk-4mE"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uWf-ZW-9i0" secondAttribute="trailing" constant="10" id="f7B-PW-Ck3"/>
                 <constraint firstItem="Oop-yP-pH1" firstAttribute="top" secondItem="jTd-SX-3zC" secondAttribute="bottom" constant="20" id="guh-bF-Dn0"/>
-                <constraint firstItem="hqo-cs-eA5" firstAttribute="top" secondItem="uWf-ZW-9i0" secondAttribute="bottom" constant="10" id="iMK-VO-33u"/>
+                <constraint firstItem="7XQ-ly-FZ2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="izf-xH-GTv"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Oop-yP-pH1" secondAttribute="trailing" constant="10" id="oyt-pH-2UZ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hqo-cs-eA5" secondAttribute="trailing" constant="10" id="ozG-7H-SF5"/>
+                <constraint firstItem="hqo-cs-eA5" firstAttribute="top" secondItem="VkZ-2Q-dC1" secondAttribute="bottom" constant="20" id="w6J-va-8FH"/>
             </constraints>
             <point key="canvasLocation" x="117" y="20"/>
         </view>

@@ -13,6 +13,10 @@ class MapViewController: UIViewController {
     @IBOutlet weak var mapView: GMSMapView!
     var markers = [GMSMarker]()
     
+    private var allMarkers = [GMSMarker]()
+    
+    var massSanatorium = [SanatoriumModel]()
+      
     private lazy var titleLabel: UILabel = {
         let titleLabel = UILabel()
         titleLabel.font = UIFont.boldSystemFont(ofSize: 17.0)
@@ -26,16 +30,41 @@ class MapViewController: UIViewController {
         mapView.delegate = self
         
         let location = GMSCameraPosition.camera(withLatitude: 53.6617, longitude: 28.0745, zoom: 5.8)
-
-            mapView.camera = location
+        mapView.camera = location
+        
+        getSanatorium()
     }
     
-    func drawMarker(to location: CLLocationCoordinate2D) {
-        //mapView.clear()
-        let marker = GMSMarker(position: location)
-        marker.title = "Тестовый маркер"
+    private func drawMarker(sanatorium: SanatoriumModel) {
+        guard let sanXcoordinate = Double(sanatorium.lat),
+              let sanYcoordinate = Double(sanatorium.lon) else { return }
+        
+        let position = CLLocationCoordinate2D(latitude: sanXcoordinate, longitude: sanYcoordinate)
+        let marker = GMSMarker(position: position)
+        var i: Int = 0
+        for _ in massSanatorium {
+            marker.title = massSanatorium[i].name
+            i = i + 1
+        }
+        allMarkers.append(marker)
         marker.map = mapView
-        markers.append(marker)
+    }
+    
+    private func getSanatorium() {
+        FuncForFirebase.shared.getSanatoriums { result in
+            switch result {
+                case .success(let success):
+                    var i: Int = 0
+                    for temp in success {
+                        self.massSanatorium.append(success[i])
+                        self.drawMarker(sanatorium: temp)
+                        //print(success[i].name)
+                        i = i + 1
+                    }
+                case .failure(let failure):
+                    print(failure)
+            }
+        }
     }
  
 
@@ -43,22 +72,6 @@ class MapViewController: UIViewController {
 
 extension MapViewController: GMSMapViewDelegate {
     
-    func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
-        print("Координаты нажатия: \(coordinate.latitude), \(coordinate.longitude)")
-        drawMarker(to: coordinate)
-    }
-    
-    
-    func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
-        markers.forEach { mark in
-            if mark == marker {
-                mark.map = nil
-        }
-                    
-    }
-        guard let index = markers.firstIndex(of: marker) else { return true }
-        markers.remove(at: index)
-        return true
-    }
+
 
 }

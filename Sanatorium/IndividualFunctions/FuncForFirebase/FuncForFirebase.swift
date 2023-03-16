@@ -61,12 +61,16 @@ class FuncForFirebase {
                     guard let id = data["id"] as? String else { return }
                     guard let imageURL = data["imageURL"] as? String else { return }
                     guard let telefon = data["telefon"] as? String else { return }
+                    guard let lat = data["lat"] as? String else { return }
+                    guard let lon = data["lon"] as? String else { return }
                     let sanatoriumModel = SanatoriumModel()
                     sanatoriumModel.name = nameOfSanatorium
                     sanatoriumModel.adress = adressOfSanatorium
                     sanatoriumModel.id = id
                     sanatoriumModel.imageURL = imageURL
                     sanatoriumModel.telefon = telefon
+                    sanatoriumModel.lat = lat
+                    sanatoriumModel.lon = lon
                     
                     
 //                    sanatoriumModel = SanatoriumModel(name: nameOfSanatorium, adress: adressOfSanatorium, id: id, imageURL: imageURL, telefon: telefon)
