@@ -22,13 +22,13 @@ class SanatoriumCell: UICollectionViewCell {
         imageView.layer.cornerRadius = 20
         cellContainer.layer.cornerRadius = 20
         
-        //self.cityLabel.numberOfLines = 5
     }
     
     func setSanatorium(name: String, city: String, imageURL: URL?) {
         nameLabel.text = name
         cityLabel.text = city
         imageView.sd_setImage(with: imageURL)
+        
     }
 
 }

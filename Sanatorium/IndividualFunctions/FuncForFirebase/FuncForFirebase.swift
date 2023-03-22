@@ -11,7 +11,6 @@ import FirebaseStorage
 import Firebase
 
 class FuncForFirebase {
-    
     static let shared = FuncForFirebase()
     
     private func configureFB() -> Firestore {

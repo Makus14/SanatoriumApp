@@ -32,6 +32,12 @@ class SearchViewController: UIViewController {
         }
     }
     
+    var massSearch = [SanatoriumModel]() {
+        didSet {
+            collectionView.reloadData()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.titleView = titleLabel
@@ -41,7 +47,8 @@ class SearchViewController: UIViewController {
         collectionView.dataSource = self
         
         registerCell()
-        //getSanatorium()
+
+        getSanatorium()
         
     }
     
@@ -55,14 +62,11 @@ class SearchViewController: UIViewController {
             switch result {
                 case .success(let success):
                     var i: Int = 0
-                    let text = self.searchFieldOutlet.text!.lowercased()
                     for _ in success {
-                        let isArrayContains = success[i].name.lowercased().range(of: text)
-                        if isArrayContains != nil {
-                            self.massSanatorium.append(success[i])
-                        }
+                        self.massSanatorium.append(success[i])
                         i = i + 1
                     }
+                    self.massSearch = self.massSanatorium
                 case .failure(let failure):
                     print(failure)
             }
@@ -70,8 +74,17 @@ class SearchViewController: UIViewController {
     }
 
     @IBAction func searchAction(_ sender: Any) {
-        massSanatorium.removeAll()
-        getSanatorium()
+        massSearch.removeAll()
+        
+            var i: Int = 0
+            let text = self.searchFieldOutlet.text!.lowercased()
+            for _ in massSanatorium {
+                let isArrayContains = massSanatorium[i].name.lowercased().range(of: text)
+                if isArrayContains != nil {
+                    self.massSearch.append(massSanatorium[i])
+                }
+                i = i + 1
+            }
         
     }
     
@@ -88,16 +101,16 @@ extension SearchViewController: UICollectionViewDelegate {
 
 extension SearchViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return massSanatorium.count
+        return massSearch.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SanatoriumCell.id, for: indexPath)
         guard let sanCell = cell as? SanatoriumCell else { return cell }
         
-        let nameOfSanatorium = String(massSanatorium[indexPath.row].name)
-        let adressOfSanatorium = String(massSanatorium[indexPath.row].adress)
-        let imageURL = URL(string: massSanatorium[indexPath.row].imageURL)
+        let nameOfSanatorium = String(massSearch[indexPath.row].name)
+        let adressOfSanatorium = String(massSearch[indexPath.row].adress)
+        let imageURL = URL(string: massSearch[indexPath.row].imageURL)
         
         sanCell.setSanatorium(name: nameOfSanatorium, city: adressOfSanatorium, imageURL: imageURL)
         

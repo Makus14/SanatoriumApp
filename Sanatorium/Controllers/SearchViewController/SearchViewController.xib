@@ -47,7 +47,7 @@
                         <constraint firstAttribute="trailing" secondItem="9JM-kI-Tun" secondAttribute="trailing" constant="15" id="yYH-Wm-K0S"/>
                     </constraints>
                 </view>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="AcW-4K-rtP">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="AcW-4K-rtP">
                     <rect key="frame" x="0.0" y="129" width="393" height="689"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="a4D-MT-xlv">

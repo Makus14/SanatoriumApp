@@ -65,6 +65,9 @@
 		BDF09B1029BF9F6A0008E26C /* RoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF09B0E29BF9F6A0008E26C /* RoomsViewController.swift */; };
 		BDF09B1129BF9F6A0008E26C /* RoomsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDF09B0F29BF9F6A0008E26C /* RoomsViewController.xib */; };
 		BDF09B1529C079B70008E26C /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF09B1429C079B70008E26C /* RealmManager.swift */; };
+		BDF09B4929CA174D0008E26C /* RealmSanatoriumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF09B4829CA174D0008E26C /* RealmSanatoriumModel.swift */; };
+		BDF09B4D29CA2D150008E26C /* SanatoriumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF09B4B29CA2D150008E26C /* SanatoriumTableViewCell.swift */; };
+		BDF09B4E29CA2D150008E26C /* SanatoriumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDF09B4C29CA2D150008E26C /* SanatoriumTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,6 +127,9 @@
 		BDF09B0E29BF9F6A0008E26C /* RoomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsViewController.swift; sourceTree = "<group>"; };
 		BDF09B0F29BF9F6A0008E26C /* RoomsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomsViewController.xib; sourceTree = "<group>"; };
 		BDF09B1429C079B70008E26C /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		BDF09B4829CA174D0008E26C /* RealmSanatoriumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmSanatoriumModel.swift; sourceTree = "<group>"; };
+		BDF09B4B29CA2D150008E26C /* SanatoriumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanatoriumTableViewCell.swift; sourceTree = "<group>"; };
+		BDF09B4C29CA2D150008E26C /* SanatoriumTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SanatoriumTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +248,7 @@
 			children = (
 				BD8624EA29A54F60004F402C /* RegionModel.swift */,
 				BD8624FD29AA6EEF004F402C /* SanatoriumModel.swift */,
+				BDF09B4829CA174D0008E26C /* RealmSanatoriumModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -347,6 +354,7 @@
 		BDA063F5297878B200B3E247 /* Sanatorium */ = {
 			isa = PBXGroup;
 			children = (
+				BDF09B4A29CA2CEB0008E26C /* TableCells */,
 				BDF09B1329C079950008E26C /* Manager */,
 				BD86250129AC06BB004F402C /* IndividualFunctions */,
 				BD8624E929A54F44004F402C /* Models */,
@@ -510,6 +518,15 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
+		BDF09B4A29CA2CEB0008E26C /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				BDF09B4B29CA2D150008E26C /* SanatoriumTableViewCell.swift */,
+				BDF09B4C29CA2D150008E26C /* SanatoriumTableViewCell.xib */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -567,7 +584,7 @@
 			mainGroup = BDA063EA297878B100B3E247;
 			packageReferences = (
 				BDD0357D29A4E13B000FECEB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				BD8624EC29A78F0B004F402C /* XCRemoteSwiftPackageReference "SDWebImage.git" */,
+				BD8624EC29A78F0B004F402C /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				BDF09B0229BF84D90008E26C /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = BDA063F4297878B200B3E247 /* Products */;
@@ -593,6 +610,7 @@
 				BDE3A09629BB6DC800A557A1 /* SanatoriumViewController.xib in Resources */,
 				BD43FC93299E602C0025755B /* MinskController.xib in Resources */,
 				BDA0641F29787CD900B3E247 /* SearchViewController.xib in Resources */,
+				BDF09B4E29CA2D150008E26C /* SanatoriumTableViewCell.xib in Resources */,
 				BD43FC8A299E60020025755B /* GomelController.xib in Resources */,
 				BDF09AFE29BC705B0008E26C /* SanatoriumCollectionCell.xib in Resources */,
 				BD8001DB29787E2F00DEFA45 /* FavouriteViewController.xib in Resources */,
@@ -679,9 +697,11 @@
 				BDA0641E29787CD900B3E247 /* SearchViewController.swift in Sources */,
 				BDA0642629787D1600B3E247 /* TabBarController.swift in Sources */,
 				BDF09B1029BF9F6A0008E26C /* RoomsViewController.swift in Sources */,
+				BDF09B4929CA174D0008E26C /* RealmSanatoriumModel.swift in Sources */,
 				BDE3A09529BB6DC800A557A1 /* SanatoriumViewController.swift in Sources */,
 				BD43FC89299E60020025755B /* GomelController.swift in Sources */,
 				BDF09AFD29BC705B0008E26C /* SanatoriumCollectionCell.swift in Sources */,
+				BDF09B4D29CA2D150008E26C /* SanatoriumTableViewCell.swift in Sources */,
 				BD89EF28299AB74A00CD428B /* SelectCell.swift in Sources */,
 				BD86250429AC070A004F402C /* FuncForBackground.swift in Sources */,
 				BDA063F7297878B200B3E247 /* AppDelegate.swift in Sources */,
@@ -915,7 +935,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		BD8624EC29A78F0B004F402C /* XCRemoteSwiftPackageReference "SDWebImage.git" */ = {
+		BD8624EC29A78F0B004F402C /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
 			requirement = {
@@ -944,7 +964,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		BD8624ED29A78F0B004F402C /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BD8624EC29A78F0B004F402C /* XCRemoteSwiftPackageReference "SDWebImage.git" */;
+			package = BD8624EC29A78F0B004F402C /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImage;
 		};
 		BDD0357E29A4E13B000FECEB /* FirebaseAuth */ = {

@@ -57,9 +57,6 @@ class MogilevController: UIViewController {
         }
     }
 
-
-
-
 }
 
 extension MogilevController: UICollectionViewDelegate {

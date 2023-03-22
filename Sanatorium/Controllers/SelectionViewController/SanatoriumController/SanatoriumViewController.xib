@@ -13,6 +13,7 @@
                 <outlet property="adressOfSanatoriumLabel" destination="o4j-Cl-CLD" id="Isy-dc-Uz6"/>
                 <outlet property="collectionView" destination="I4v-ge-Ocd" id="JO6-PG-XHB"/>
                 <outlet property="containerView" destination="Xr7-15-KdK" id="sDn-uV-6NO"/>
+                <outlet property="favouriteOutlet" destination="tQr-lU-KVN" id="f0b-XV-ORd"/>
                 <outlet property="imageOfSanatorium" destination="8Cx-HO-9ad" id="MRJ-Pu-iiY"/>
                 <outlet property="imageViewContainer" destination="5oP-og-hMY" id="ojd-zf-1wB"/>
                 <outlet property="nameOfSanatoriumLabel" destination="dJp-on-2gc" id="449-lv-gZn"/>
@@ -49,7 +50,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="I4v-ge-Ocd">
-                            <rect key="frame" x="30" y="404.33333333333331" width="333" height="129.99999999999994"/>
+                            <rect key="frame" x="30" y="549" width="333" height="130"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="130" id="t4W-Oe-sCy"/>
@@ -61,21 +62,32 @@
                                 <inset key="sectionInset" minX="40" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </collectionViewFlowLayout>
                         </collectionView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQr-lU-KVN">
+                            <rect key="frame" x="332.33333333333331" y="10" width="50.666666666666686" height="35"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="heart" catalog="system"/>
+                            <connections>
+                                <action selector="addToFavouriteAction:" destination="-1" eventType="touchUpInside" id="OVi-nK-UDP"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstItem="8Cx-HO-9ad" firstAttribute="top" secondItem="Xr7-15-KdK" secondAttribute="top" id="6Fm-38-Q7R"/>
                         <constraint firstAttribute="trailing" secondItem="8Cx-HO-9ad" secondAttribute="trailing" id="Cdl-ZV-TJ8"/>
+                        <constraint firstItem="tQr-lU-KVN" firstAttribute="top" secondItem="Xr7-15-KdK" secondAttribute="top" constant="10" id="Hgy-vp-9bT"/>
                         <constraint firstItem="8Cx-HO-9ad" firstAttribute="leading" secondItem="Xr7-15-KdK" secondAttribute="leading" id="Iaw-wJ-Kyj"/>
                         <constraint firstAttribute="trailing" secondItem="I4v-ge-Ocd" secondAttribute="trailing" constant="30" id="NK2-3z-sRi"/>
                         <constraint firstAttribute="trailing" secondItem="o4j-Cl-CLD" secondAttribute="trailing" constant="10" id="P6G-mR-zEs"/>
                         <constraint firstItem="5oP-og-hMY" firstAttribute="top" secondItem="Xr7-15-KdK" secondAttribute="top" id="QaK-V1-Dlg"/>
                         <constraint firstItem="5oP-og-hMY" firstAttribute="leading" secondItem="Xr7-15-KdK" secondAttribute="leading" id="UWU-k2-3nH"/>
+                        <constraint firstAttribute="bottom" secondItem="I4v-ge-Ocd" secondAttribute="bottom" constant="80" id="X4C-xx-tja"/>
                         <constraint firstItem="dJp-on-2gc" firstAttribute="top" secondItem="8Cx-HO-9ad" secondAttribute="bottom" constant="20" id="a3p-Uj-eKr"/>
                         <constraint firstAttribute="trailing" secondItem="dJp-on-2gc" secondAttribute="trailing" id="a8a-qM-gYV"/>
                         <constraint firstItem="I4v-ge-Ocd" firstAttribute="leading" secondItem="Xr7-15-KdK" secondAttribute="leading" constant="30" id="bKY-oI-8Ya"/>
+                        <constraint firstAttribute="trailing" secondItem="tQr-lU-KVN" secondAttribute="trailing" constant="10" id="ctf-b5-v3P"/>
                         <constraint firstItem="o4j-Cl-CLD" firstAttribute="leading" secondItem="Xr7-15-KdK" secondAttribute="leading" constant="20" id="dRv-XZ-tke"/>
-                        <constraint firstItem="I4v-ge-Ocd" firstAttribute="top" secondItem="o4j-Cl-CLD" secondAttribute="bottom" constant="20" id="ftB-mW-A0w"/>
                         <constraint firstItem="o4j-Cl-CLD" firstAttribute="top" secondItem="dJp-on-2gc" secondAttribute="bottom" constant="20" id="vxg-8W-ND3"/>
                         <constraint firstAttribute="bottom" secondItem="5oP-og-hMY" secondAttribute="bottom" id="w0f-9O-vvN"/>
                         <constraint firstItem="dJp-on-2gc" firstAttribute="leading" secondItem="Xr7-15-KdK" secondAttribute="leading" id="wrf-RL-cen"/>
@@ -95,6 +107,7 @@
         </view>
     </objects>
     <resources>
+        <image name="heart" catalog="system" width="128" height="107"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -8,7 +8,6 @@
 import UIKit
 
 class FuncForBackground {
-    
     static let display = FuncForFirebase()
     
     func funcForBackground() {

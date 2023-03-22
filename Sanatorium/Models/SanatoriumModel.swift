@@ -8,7 +8,6 @@
 import UIKit
 
 class SanatoriumModel {
-
     var name: String = ""
     var adress: String = ""
     var id: String = ""

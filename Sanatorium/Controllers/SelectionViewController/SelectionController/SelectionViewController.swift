@@ -68,9 +68,11 @@ class SelectionViewController: UIViewController {
     @objc func addSanatorium() {
         let vc = ChoiceRegionController(nibName: "ChoiceRegionController", bundle: nil)
         
-        vc.modalTransitionStyle = .crossDissolve
-        vc.modalPresentationStyle = .overFullScreen
-        self.navigationController!.present(vc, animated: true)
+        //vc.modalTransitionStyle = .crossDissolve
+        //vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true)
+        //self.navigationController!.pushViewController(vc, animated: true)
+        
         //self.navigationController!.pushViewController(vc, animated: true)
     }
     

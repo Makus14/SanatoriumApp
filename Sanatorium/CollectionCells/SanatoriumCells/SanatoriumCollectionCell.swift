@@ -17,7 +17,6 @@ class SanatoriumCollectionCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
 
-
     }
 
     func setupData(type: SetValue) {

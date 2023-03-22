@@ -30,6 +30,8 @@ class SanatoriumViewController: UIViewController {
     
     var sanatoriumInfo: SanatoriumModel?
     var enumNamesPoints: [SetValue] = [.services, .rooms]
+    var sanatorium: RealmSanatoriumModel?
+    //var sanatoriuma = RealmManager<RealmSanatoriumModel>().read()
     
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var imageViewContainer: UIImageView!
@@ -37,6 +39,8 @@ class SanatoriumViewController: UIViewController {
     @IBOutlet weak var nameOfSanatoriumLabel: UILabel!
     @IBOutlet weak var adressOfSanatoriumLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var favouriteOutlet: UIButton!
+    
     
     override func viewDidLoad() {
         collectionView.delegate = self
@@ -47,6 +51,7 @@ class SanatoriumViewController: UIViewController {
         setupLayout()
         makeConstraints()
         
+        //setFavourite()
         
         
     }
@@ -82,6 +87,19 @@ class SanatoriumViewController: UIViewController {
         nameOfSanatoriumLabel.text = sanatoriumInfo?.name
         adressOfSanatoriumLabel.text = sanatoriumInfo?.adress
         
+        
+    }
+    
+    func setFavourite() {
+        let sanatorium = RealmSanatoriumModel(name: sanatoriumInfo!.name, adress: sanatoriumInfo!.adress, id: sanatoriumInfo!.id, imageURL: sanatoriumInfo!.imageURL, lat: sanatoriumInfo!.lat, lon: sanatoriumInfo!.lon, telefon: sanatoriumInfo!.telefon, favourite: true)
+
+//        var i: Int = 0
+//        for _ in sanatoriuma {
+//            if sanatorium == sanatoriuma[i] {
+//                favouriteOutlet.tintColor = .red
+//
+//            }
+//        }
     }
     
     @objc private func callNumberAction() {
@@ -95,6 +113,25 @@ class SanatoriumViewController: UIViewController {
             }
         }
     }
+    
+    @IBAction func addToFavouriteAction(_ sender: Any) {
+        let sanatorium = RealmSanatoriumModel(name: sanatoriumInfo!.name, adress: sanatoriumInfo!.adress, id: sanatoriumInfo!.id, imageURL: sanatoriumInfo!.imageURL, lat: sanatoriumInfo!.lat, lon: sanatoriumInfo!.lon, telefon: sanatoriumInfo!.telefon, favourite: true)
+        let sanatoriuma = RealmManager<RealmSanatoriumModel>().read()
+        
+        if sanatoriuma.isEmpty {
+                   RealmManager<RealmSanatoriumModel>().write(object: sanatorium)
+               } else {
+                   for sanatoriy in sanatoriuma {
+                        if sanatorium.name == sanatoriy.name {
+                           RealmManager<RealmSanatoriumModel>().delete(object: sanatoriy)
+                            return
+                       }
+                   }
+                        RealmManager<RealmSanatoriumModel>().write(object: sanatorium)
+                        favouriteOutlet.tintColor = .red
+                }
+    }
+    
     
 }
 
