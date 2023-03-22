@@ -29,21 +29,54 @@ class AddNewSanatoriumController: UIViewController {
     }
     
     func addSanatorium(completion: @escaping (AddSanatoriumResult) -> Void) {
-        let db = Firestore.firestore()
-        db.collection("sanatoriums").addDocument(data: [
-            "nameOfSanatorium": self.nameOfSanatoriumField.text!,
-            "adressOfSanatorium": self.adressOfSanatoriumField.text!,
-            "id": ownerIdOfRegion!,
-            "telefon": telefonField.text!,
-            "lat": latField.text!,
-            "lon": lonField.text!
-            
-            
-        ]) { (error) in
-            if let error = error {
-                completion(.failure(error))
+        
+        upload(currentSanatoriumName: nameOfSanatoriumField.text!, photo: photoImageView.image!) { (result) in
+            switch result {
+                case .success(let url):
+                    let db = Firestore.firestore()
+                    db.collection("sanatoriums").addDocument(data: [
+                        "imageURL": url.absoluteString,
+                        "nameOfSanatorium": self.nameOfSanatoriumField.text!,
+                        "adressOfSanatorium": self.adressOfSanatoriumField.text!,
+                        "id": self.ownerIdOfRegion!,
+                        "telefon": self.telefonField.text!,
+                        "lat": self.latField.text!,
+                        "lon": self.lonField.text!
+                        
+                        
+                    ]) { (error) in
+                        if let error = error {
+                            completion(.failure(error))
+                        }
+                        completion(.success)
+                    }
+                case .failure(let error):
+                    completion(.failure(error))
             }
-            completion(.success)
+        }
+
+    }
+    
+    func upload(currentSanatoriumName: String, photo: UIImage, completion: @escaping (Result<URL, Error>) -> Void) {
+        let ref = Storage.storage().reference().child("imageOfSanatorium").child(currentSanatoriumName)
+        
+        guard let imageData = photoImageView.image?.jpegData(compressionQuality: 0.4) else { return }
+        
+        let metadata = StorageMetadata()
+        metadata.contentType = "image/jpeg"
+        
+        ref.putData(imageData, metadata: metadata) { (metadata, error) in
+            guard let metadata = metadata else {
+                completion(.failure(error!))
+                return
+            }
+            ref.downloadURL { (url, error) in
+                guard let url = url else {
+                    completion(.failure(error!))
+                    return
+                }
+                completion(.success(url))
+            }
         }
     }
     
