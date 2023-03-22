@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="1550" id="KGk-i7-Jjw" customClass="TitleTableViewCell" customModule="Sanatorium" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="403" height="1550"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="403" height="1550"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fUO-q0-gsy">
+                        <rect key="frame" x="0.0" y="0.0" width="403" height="1320"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIcon" translatesAutoresizingMaskIntoConstraints="NO" id="QDX-S6-QZm">
+                                <rect key="frame" x="151.66666666666666" y="0.0" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="a7V-en-FWv"/>
+                                    <constraint firstAttribute="height" constant="100" id="cPc-av-kbP"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="САНАТОРИУМ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jvl-Ua-J93">
+                                <rect key="frame" x="10" y="100" width="383" height="35.333333333333343"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="27"/>
+                                <color key="textColor" red="0.25658550860000001" green="0.22589284179999999" blue="0.050911910829999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="В НАШЕМ КАТАЛОГЕ ВЫ СМОЖЕТЕ НАЙТИ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4t-jN-zxF">
+                                <rect key="frame" x="30" y="155.33333333333334" width="343" height="19.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.25658550860000001" green="0.22589284179999999" blue="0.050911910829999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ЛЮБОЙ САНАТОРИЙ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6FJ-YE-X2q">
+                                <rect key="frame" x="10" y="184.66666666666666" width="383" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.25658550860000001" green="0.22589284179999999" blue="0.050911910829999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HyY-6Z-D46">
+                                <rect key="frame" x="30" y="227.66666666666663" width="343" height="170"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="titleImage" translatesAutoresizingMaskIntoConstraints="NO" id="X2J-Sf-T6x">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="170"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="X2J-Sf-T6x" secondAttribute="bottom" id="1Sx-01-5KF"/>
+                                    <constraint firstItem="X2J-Sf-T6x" firstAttribute="top" secondItem="HyY-6Z-D46" secondAttribute="top" id="pHs-3F-Ts1"/>
+                                    <constraint firstItem="X2J-Sf-T6x" firstAttribute="leading" secondItem="HyY-6Z-D46" secondAttribute="leading" id="rPO-IQ-yzd"/>
+                                    <constraint firstAttribute="height" constant="170" id="seZ-8E-ugX"/>
+                                    <constraint firstAttribute="trailing" secondItem="X2J-Sf-T6x" secondAttribute="trailing" id="wIr-tc-e0d"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="КАТАЛОГ САНАТОРИЕВ БЕЛАРУСИ: ЧТО, ГДЕ, КАК И СКОЛЬКО?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rj-41-sKZ">
+                                <rect key="frame" x="30" y="417.66666666666669" width="343" height="38.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.25658550860000001" green="0.22589284179999999" blue="0.050911910829999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Беларусь - это не только могучая держава, но и отличная здравница. Еще бы, ведь каталог санаториев невероятно велик." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDS-cV-hzc">
+                                <rect key="frame" x="30" y="466" width="343" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.38499160259999998" green="0.38585923430000002" blue="0.39909917659999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pm1-lR-5MI">
+                                <rect key="frame" x="30" y="535" width="343" height="89.666666666666629"/>
+                                <string key="text">В нашей стране первые санатории и пансионаты появились в 1939 году. Официальный сайт-каталог расскажет вам и поможет подобрать подходящий отдых в санатории с недорогой ценой.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.38499160259999998" green="0.38585923430000002" blue="0.39909917659999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="САНАТОРИЙ: ЧТО ЭТО?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FwU-Xx-HCb">
+                                <rect key="frame" x="30" y="664.66666666666663" width="343" height="19.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.25658550860000001" green="0.22589284179999999" blue="0.050911910829999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Z8-C8-4i9">
+                                <rect key="frame" x="30" y="694" width="343" height="197"/>
+                                <string key="text">Так что же представляют собой санатории? Речь идет о специальных учреждениях, в которых профилактика и лечение происходит с использованием разнообразных природных факторов. Впрочем, лечение в санатории обычно предполагает не только использование полезных грязей, минеральных вод, благоприятного климата и т.д. Лучшие санатории страны также предлагают своим гостям сбалансированное питание, физиотерапию и физкультуру.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.38499160259999998" green="0.38585923430000002" blue="0.39909917659999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fl2-zK-jVy">
+                                <rect key="frame" x="30" y="911" width="343" height="170"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeSecond" translatesAutoresizingMaskIntoConstraints="NO" id="yyq-2B-8wx">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="170"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="yyq-2B-8wx" secondAttribute="bottom" id="35l-dr-mk4"/>
+                                    <constraint firstAttribute="trailing" secondItem="yyq-2B-8wx" secondAttribute="trailing" id="Dog-SC-4Lt"/>
+                                    <constraint firstItem="yyq-2B-8wx" firstAttribute="top" secondItem="fl2-zK-jVy" secondAttribute="top" id="I7O-Ui-3cC"/>
+                                    <constraint firstAttribute="height" constant="170" id="KmI-0W-oJb"/>
+                                    <constraint firstItem="yyq-2B-8wx" firstAttribute="leading" secondItem="fl2-zK-jVy" secondAttribute="leading" id="kGD-q1-ETt"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="КАК И ГДЕ ОСУЩЕСТВЛЯЕТСЯ ПОИСК САНАТОРИЯ?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ms-fu-bHI">
+                                <rect key="frame" x="30" y="1101" width="343" height="38.333333333333258"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.25658550860000001" green="0.22589284179999999" blue="0.050911910829999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Не знаете, как выбрать санаторий в Беларуси? Загляните в каталог санаториев. Тут вы легко найдете недорогие санатории." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vc9-yx-Uws">
+                                <rect key="frame" x="30" y="1149.3333333333333" width="343" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.38499160259999998" green="0.38585923430000002" blue="0.39909917659999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mpr-zf-zi7">
+                                <rect key="frame" x="30" y="1218.3333333333333" width="343" height="71.666666666666742"/>
+                                <string key="text">Наши санатории - замечательные курортные места, которые ничуть не отличаются от мест, находящихся на другом континенте или в любой другой точке мира.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.38499160259999998" green="0.38585923430000002" blue="0.39909917659999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.81794255969999996" green="0.80965626239999999" blue="0.72155362369999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Pm1-lR-5MI" firstAttribute="top" secondItem="cDS-cV-hzc" secondAttribute="bottom" constant="15" id="2Nw-m9-ifk"/>
+                            <constraint firstAttribute="trailing" secondItem="FwU-Xx-HCb" secondAttribute="trailing" constant="30" id="6GR-ey-Pfg"/>
+                            <constraint firstItem="6FJ-YE-X2q" firstAttribute="top" secondItem="l4t-jN-zxF" secondAttribute="bottom" constant="10" id="8PA-0Z-eav"/>
+                            <constraint firstItem="l4t-jN-zxF" firstAttribute="leading" secondItem="fUO-q0-gsy" secondAttribute="leading" constant="30" id="9Xg-pf-Tw1"/>
+                            <constraint firstItem="Mpr-zf-zi7" firstAttribute="leading" secondItem="fUO-q0-gsy" secondAttribute="leading" constant="30" id="CWB-lz-JxL"/>
+                            <constraint firstItem="HyY-6Z-D46" firstAttribute="top" secondItem="6FJ-YE-X2q" secondAttribute="bottom" constant="20" id="EvL-Fg-gdw"/>
+                            <constraint firstItem="Jvl-Ua-J93" firstAttribute="leading" secondItem="fUO-q0-gsy" secondAttribute="leading" constant="10" id="Im3-iw-ojP"/>
+                            <constraint firstItem="QDX-S6-QZm" firstAttribute="centerX" secondItem="fUO-q0-gsy" secondAttribute="centerX" id="JiG-SI-08W"/>
+                            <constraint firstItem="6Ms-fu-bHI" firstAttribute="leading" secondItem="fUO-q0-gsy" secondAttribute="leading" constant="30" id="KDp-1H-WYk"/>
+                            <constraint firstAttribute="trailing" secondItem="3rj-41-sKZ" secondAttribute="trailing" constant="30" id="Kam-JH-aNR"/>
+                            <constraint firstItem="cDS-cV-hzc" firstAttribute="leading" secondItem="fUO-q0-gsy" secondAttribute="leading" constant="30" id="M0X-ga-ZaU"/>
+                            <constraint firstItem="Vc9-yx-Uws" firstAttribute="top" secondItem="6Ms-fu-bHI" secondAttribute="bottom" constant="10" id="SPI-iB-n25"/>
+                            <constraint firstItem="fl2-zK-jVy" firstAttribute="leading" secondItem="fUO-q0-gsy" secondAttribute="leading" constant="30" id="Syf-tj-9Pu"/>
+                            <constraint firstAttribute="trailing" secondItem="HyY-6Z-D46" secondAttribute="trailing" constant="30" id="Tbf-oM-Mva"/>
+                            <constraint firstItem="3rj-41-sKZ" firstAttribute="top" secondItem="HyY-6Z-D46" secondAttribute="bottom" constant="20" id="UJO-D0-2ve"/>
+                            <constraint firstItem="HyY-6Z-D46" firstAttribute="leading" secondItem="fUO-q0-gsy" secondAttribute="leading" constant="30" id="Z14-lT-pHf"/>
+                            <constraint firstItem="l4t-jN-zxF" firstAttribute="top" secondItem="Jvl-Ua-J93" secondAttribute="bottom" constant="20" id="ZkJ-js-Apd"/>
+                            <constraint firstItem="Vc9-yx-Uws" firstAttribute="leading" secondItem="fUO-q0-gsy" secondAttribute="leading" constant="30" id="avH-YC-gzz"/>
+                            <constraint firstAttribute="trailing" secondItem="Pm1-lR-5MI" secondAttribute="trailing" constant="30" id="b0v-aW-jm3"/>
+                            <constraint firstItem="cDS-cV-hzc" firstAttribute="top" secondItem="3rj-41-sKZ" secondAttribute="bottom" constant="10" id="boc-VS-zTU"/>
+                            <constraint firstAttribute="trailing" secondItem="fl2-zK-jVy" secondAttribute="trailing" constant="30" id="caP-Ca-6Zn"/>
+                            <constraint firstItem="QDX-S6-QZm" firstAttribute="top" secondItem="fUO-q0-gsy" secondAttribute="top" id="f0H-Re-lc7"/>
+                            <constraint firstItem="6Ms-fu-bHI" firstAttribute="top" secondItem="fl2-zK-jVy" secondAttribute="bottom" constant="20" id="iy6-MY-DFg"/>
+                            <constraint firstItem="6FJ-YE-X2q" firstAttribute="leading" secondItem="fUO-q0-gsy" secondAttribute="leading" constant="10" id="jOb-2p-8dE"/>
+                            <constraint firstItem="0Z8-C8-4i9" firstAttribute="leading" secondItem="fUO-q0-gsy" secondAttribute="leading" constant="30" id="jh4-LK-ikh"/>
+                            <constraint firstAttribute="trailing" secondItem="Mpr-zf-zi7" secondAttribute="trailing" constant="30" id="kvp-0e-1rP"/>
+                            <constraint firstItem="FwU-Xx-HCb" firstAttribute="leading" secondItem="fUO-q0-gsy" secondAttribute="leading" constant="30" id="lr9-ag-pf3"/>
+                            <constraint firstAttribute="trailing" secondItem="Jvl-Ua-J93" secondAttribute="trailing" constant="10" id="med-iN-gTV"/>
+                            <constraint firstAttribute="height" constant="1320" id="npA-JT-gBC"/>
+                            <constraint firstItem="Jvl-Ua-J93" firstAttribute="top" secondItem="QDX-S6-QZm" secondAttribute="bottom" id="pUC-SA-h4f"/>
+                            <constraint firstAttribute="trailing" secondItem="Vc9-yx-Uws" secondAttribute="trailing" constant="30" id="psk-wW-lPN"/>
+                            <constraint firstAttribute="trailing" secondItem="l4t-jN-zxF" secondAttribute="trailing" constant="30" id="rLc-md-TQl"/>
+                            <constraint firstItem="0Z8-C8-4i9" firstAttribute="top" secondItem="FwU-Xx-HCb" secondAttribute="bottom" constant="10" id="ssr-i3-OP4"/>
+                            <constraint firstAttribute="trailing" secondItem="6FJ-YE-X2q" secondAttribute="trailing" constant="10" id="tP8-KE-L8L"/>
+                            <constraint firstItem="3rj-41-sKZ" firstAttribute="leading" secondItem="fUO-q0-gsy" secondAttribute="leading" constant="30" id="ud9-zM-ltU"/>
+                            <constraint firstItem="Mpr-zf-zi7" firstAttribute="top" secondItem="Vc9-yx-Uws" secondAttribute="bottom" constant="15" id="vBN-06-Vql"/>
+                            <constraint firstItem="fl2-zK-jVy" firstAttribute="top" secondItem="0Z8-C8-4i9" secondAttribute="bottom" constant="20" id="vd2-v1-EkM"/>
+                            <constraint firstAttribute="trailing" secondItem="cDS-cV-hzc" secondAttribute="trailing" constant="30" id="wuG-Y5-A5u"/>
+                            <constraint firstAttribute="trailing" secondItem="6Ms-fu-bHI" secondAttribute="trailing" constant="30" id="yvc-b7-3lX"/>
+                            <constraint firstItem="FwU-Xx-HCb" firstAttribute="top" secondItem="Pm1-lR-5MI" secondAttribute="bottom" constant="40" id="zDK-2Y-4JA"/>
+                            <constraint firstAttribute="trailing" secondItem="0Z8-C8-4i9" secondAttribute="trailing" constant="30" id="zK6-5q-vtJ"/>
+                            <constraint firstItem="Pm1-lR-5MI" firstAttribute="leading" secondItem="fUO-q0-gsy" secondAttribute="leading" constant="30" id="zkz-oB-dMe"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="fUO-q0-gsy" secondAttribute="bottom" id="MyT-Rd-9ZN"/>
+                    <constraint firstItem="fUO-q0-gsy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Znm-GK-vCP"/>
+                    <constraint firstItem="fUO-q0-gsy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gIT-6N-E0d"/>
+                    <constraint firstAttribute="trailing" secondItem="fUO-q0-gsy" secondAttribute="trailing" id="yxe-3Y-d4e"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="containerViewFirst" destination="HyY-6Z-D46" id="ojN-uA-ois"/>
+                <outlet property="containerViewSecond" destination="fl2-zK-jVy" id="I5B-B3-QPh"/>
+                <outlet property="imageContainerViewFirst" destination="X2J-Sf-T6x" id="Kk6-hI-wtJ"/>
+                <outlet property="imageContainerViewSecond" destination="yyq-2B-8wx" id="e2B-Ps-c4e"/>
+            </connections>
+            <point key="canvasLocation" x="191.6030534351145" y="462.67605633802822"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="AppIcon" width="4266" height="4266"/>
+        <image name="homeSecond" width="1024" height="687"/>
+        <image name="titleImage" width="895" height="494"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Sanatorium" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="aMm-M0-3e2" id="fxY-XQ-x38"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,8 +17,20 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="aMm-M0-3e2">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <color key="backgroundColor" red="0.81794255969999996" green="0.81260799939999995" blue="0.73120332909999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </tableView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.81794255969999996" green="0.80965626239999999" blue="0.72155362369999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="aMm-M0-3e2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="JMS-1D-evz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aMm-M0-3e2" secondAttribute="trailing" id="OS5-Nt-jg4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="aMm-M0-3e2" secondAttribute="bottom" id="ict-hq-JZA"/>
+                <constraint firstItem="aMm-M0-3e2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="y8W-aI-wM2"/>
+            </constraints>
             <point key="canvasLocation" x="117" y="20"/>
         </view>
     </objects>

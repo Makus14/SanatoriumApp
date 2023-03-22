@@ -20,6 +20,9 @@
 		BD43FC93299E602C0025755B /* MinskController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD43FC91299E602C0025755B /* MinskController.xib */; };
 		BD43FC96299E60410025755B /* MogilevController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43FC94299E60410025755B /* MogilevController.swift */; };
 		BD43FC97299E60410025755B /* MogilevController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD43FC95299E60410025755B /* MogilevController.xib */; };
+		BD72E11129CB80F300CC4816 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD72E10F29CB80F300CC4816 /* TitleTableViewCell.swift */; };
+		BD72E11229CB80F300CC4816 /* TitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD72E11029CB80F300CC4816 /* TitleTableViewCell.xib */; };
+		BD72E11429CB848C00CC4816 /* EnumHomeCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD72E11329CB848C00CC4816 /* EnumHomeCells.swift */; };
 		BD8001DA29787E2F00DEFA45 /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8001D829787E2F00DEFA45 /* FavouriteViewController.swift */; };
 		BD8001DB29787E2F00DEFA45 /* FavouriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD8001D929787E2F00DEFA45 /* FavouriteViewController.xib */; };
 		BD8624EB29A54F60004F402C /* RegionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8624EA29A54F60004F402C /* RegionModel.swift */; };
@@ -86,6 +89,9 @@
 		BD43FC91299E602C0025755B /* MinskController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MinskController.xib; sourceTree = "<group>"; };
 		BD43FC94299E60410025755B /* MogilevController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MogilevController.swift; sourceTree = "<group>"; };
 		BD43FC95299E60410025755B /* MogilevController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MogilevController.xib; sourceTree = "<group>"; };
+		BD72E10F29CB80F300CC4816 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
+		BD72E11029CB80F300CC4816 /* TitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleTableViewCell.xib; sourceTree = "<group>"; };
+		BD72E11329CB848C00CC4816 /* EnumHomeCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumHomeCells.swift; sourceTree = "<group>"; };
 		BD8001D829787E2F00DEFA45 /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
 		BD8001D929787E2F00DEFA45 /* FavouriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteViewController.xib; sourceTree = "<group>"; };
 		BD8624EA29A54F60004F402C /* RegionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionModel.swift; sourceTree = "<group>"; };
@@ -232,6 +238,32 @@
 				BD43FC95299E60410025755B /* MogilevController.xib */,
 			);
 			path = Mogilev;
+			sourceTree = "<group>";
+		};
+		BD72E10D29CB808F00CC4816 /* HomeCells */ = {
+			isa = PBXGroup;
+			children = (
+				BD72E11529CB8B7A00CC4816 /* TitleCell */,
+			);
+			path = HomeCells;
+			sourceTree = "<group>";
+		};
+		BD72E10E29CB809D00CC4816 /* SanatoriumCells */ = {
+			isa = PBXGroup;
+			children = (
+				BDF09B4B29CA2D150008E26C /* SanatoriumTableViewCell.swift */,
+				BDF09B4C29CA2D150008E26C /* SanatoriumTableViewCell.xib */,
+			);
+			path = SanatoriumCells;
+			sourceTree = "<group>";
+		};
+		BD72E11529CB8B7A00CC4816 /* TitleCell */ = {
+			isa = PBXGroup;
+			children = (
+				BD72E10F29CB80F300CC4816 /* TitleTableViewCell.swift */,
+				BD72E11029CB80F300CC4816 /* TitleTableViewCell.xib */,
+			);
+			path = TitleCell;
 			sourceTree = "<group>";
 		};
 		BD8001D729787DBC00DEFA45 /* FavouriteViewController */ = {
@@ -454,6 +486,7 @@
 			isa = PBXGroup;
 			children = (
 				BDE45086299ABCE90078F04E /* EnumAddSanatoriumResult */,
+				BD72E11329CB848C00CC4816 /* EnumHomeCells.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -521,8 +554,8 @@
 		BDF09B4A29CA2CEB0008E26C /* TableCells */ = {
 			isa = PBXGroup;
 			children = (
-				BDF09B4B29CA2D150008E26C /* SanatoriumTableViewCell.swift */,
-				BDF09B4C29CA2D150008E26C /* SanatoriumTableViewCell.xib */,
+				BD72E10E29CB809D00CC4816 /* SanatoriumCells */,
+				BD72E10D29CB808F00CC4816 /* HomeCells */,
 			);
 			path = TableCells;
 			sourceTree = "<group>";
@@ -613,6 +646,7 @@
 				BDF09B4E29CA2D150008E26C /* SanatoriumTableViewCell.xib in Resources */,
 				BD43FC8A299E60020025755B /* GomelController.xib in Resources */,
 				BDF09AFE29BC705B0008E26C /* SanatoriumCollectionCell.xib in Resources */,
+				BD72E11229CB80F300CC4816 /* TitleTableViewCell.xib in Resources */,
 				BD8001DB29787E2F00DEFA45 /* FavouriteViewController.xib in Resources */,
 				BD86250929AC0B78004F402C /* SanatoriumCell.xib in Resources */,
 				BD43FC8F299E601A0025755B /* GrodnoController.xib in Resources */,
@@ -717,7 +751,9 @@
 				BDA0641A29787CCB00B3E247 /* MapViewController.swift in Sources */,
 				BD8624EB29A54F60004F402C /* RegionModel.swift in Sources */,
 				BDF09B0129BDC3260008E26C /* DefaultsManager.swift in Sources */,
+				BD72E11129CB80F300CC4816 /* TitleTableViewCell.swift in Sources */,
 				BD8624F129A790BA004F402C /* FuncForFirebase.swift in Sources */,
+				BD72E11429CB848C00CC4816 /* EnumHomeCells.swift in Sources */,
 				BD43FC7B299E5F8E0025755B /* BrestController.swift in Sources */,
 				BD86250029AABE3C004F402C /* AddSanatoriumResult.swift in Sources */,
 				BDA0642229787CE500B3E247 /* HomeViewController.swift in Sources */,
