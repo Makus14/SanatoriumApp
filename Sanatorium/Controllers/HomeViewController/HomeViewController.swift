@@ -12,7 +12,6 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -21,7 +20,6 @@ class HomeViewController: UIViewController {
         navigationBarAppearance.barTintColor = UIColor(red: 209/255, green: 206/255, blue: 184/255, alpha: 1)
         let apperanceTabBar = UITabBarAppearance()
         apperanceTabBar.backgroundColor = UIColor(red: 209/255, green: 206/255, blue: 184/255, alpha: 1)
-        //apperanceTabBar. = UIColor(red: 65/255, green: 58/255, blue: 13/255, alpha: 1)
         tabBarController?.tabBar.tintColor = UIColor(red: 65/255, green: 58/255, blue: 13/255, alpha: 1)
         
         

@@ -51,8 +51,7 @@ class SanatoriumViewController: UIViewController {
         setupLayout()
         makeConstraints()
         
-        //setFavourite()
-        
+        setFavourite()
         
     }
     
@@ -93,13 +92,18 @@ class SanatoriumViewController: UIViewController {
     func setFavourite() {
         let sanatorium = RealmSanatoriumModel(name: sanatoriumInfo!.name, adress: sanatoriumInfo!.adress, id: sanatoriumInfo!.id, imageURL: sanatoriumInfo!.imageURL, lat: sanatoriumInfo!.lat, lon: sanatoriumInfo!.lon, telefon: sanatoriumInfo!.telefon, favourite: true)
 
-//        var i: Int = 0
-//        for _ in sanatoriuma {
-//            if sanatorium == sanatoriuma[i] {
-//                favouriteOutlet.tintColor = .red
-//
-//            }
-//        }
+        let sanatoriuma = RealmManager<RealmSanatoriumModel>().read()
+        
+        if sanatoriuma.isEmpty {
+            
+               } else {
+                   for sanatoriy in sanatoriuma {
+                        if sanatorium.name == sanatoriy.name {
+                            favouriteOutlet.tintColor = .red
+                            return
+                       }
+                   }
+                }
     }
     
     @objc private func callNumberAction() {
@@ -120,10 +124,12 @@ class SanatoriumViewController: UIViewController {
         
         if sanatoriuma.isEmpty {
                    RealmManager<RealmSanatoriumModel>().write(object: sanatorium)
+            favouriteOutlet.tintColor = .red
                } else {
                    for sanatoriy in sanatoriuma {
                         if sanatorium.name == sanatoriy.name {
                            RealmManager<RealmSanatoriumModel>().delete(object: sanatoriy)
+                            favouriteOutlet.tintColor = .white
                             return
                        }
                    }
