@@ -88,5 +88,4 @@ extension MogilevController: UICollectionViewDataSource {
         return sanCell
     }
     
-    
 }

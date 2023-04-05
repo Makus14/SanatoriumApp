@@ -56,8 +56,6 @@ class BrestController: UIViewController {
         collectionView.register(nib, forCellWithReuseIdentifier: SanatoriumCell.id)
     }
 
-
-
 }
 
 extension BrestController: UICollectionViewDelegate {
@@ -86,6 +84,5 @@ extension BrestController: UICollectionViewDataSource {
         
         return sanCell
     }
-    
     
 }

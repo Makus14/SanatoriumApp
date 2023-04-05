@@ -56,9 +56,6 @@ class GrodnoController: UIViewController {
         }
     }
 
-
-
-
 }
 
 extension GrodnoController: UICollectionViewDelegate {
@@ -88,6 +85,5 @@ extension GrodnoController: UICollectionViewDataSource {
         
         return sanCell
     }
-    
     
 }

@@ -31,7 +31,6 @@ class SanatoriumViewController: UIViewController {
     var sanatoriumInfo: SanatoriumModel?
     var enumNamesPoints: [SetValue] = [.services, .rooms]
     var sanatorium: RealmSanatoriumModel?
-    //var sanatoriuma = RealmManager<RealmSanatoriumModel>().read()
     
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var imageViewContainer: UIImageView!

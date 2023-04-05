@@ -17,8 +17,6 @@ class FavouriteViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var sanatoriumm: RealmSanatoriumModel?
-    
     var sanatorium = RealmManager<RealmSanatoriumModel>().read()
     
     override func viewDidLoad() {
@@ -31,7 +29,6 @@ class FavouriteViewController: UIViewController {
         registerCell()
         
         sanatorium = RealmManager<RealmSanatoriumModel>().read()
-        //print(sanatorium)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -54,8 +51,9 @@ extension FavouriteViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        let sanatoriuma = sanatorium[indexPath.row]
         if editingStyle == .delete {
-            let sanatoriuma = sanatorium[indexPath.row]
+            
             RealmManager<RealmSanatoriumModel>().delete(object: sanatoriuma)
             sanatorium = RealmManager<RealmSanatoriumModel>().read()
             tableView.reloadData()
@@ -72,6 +70,7 @@ extension FavouriteViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: SanatoriumTableViewCell.id, for: indexPath)
+        
                 guard let sanCell = cell as? SanatoriumTableViewCell else { return cell }
         
                 let nameOfSanatorium = String(sanatorium[indexPath.row].name)

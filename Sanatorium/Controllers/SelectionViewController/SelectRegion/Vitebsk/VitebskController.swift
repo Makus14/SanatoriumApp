@@ -57,8 +57,6 @@ class VitebskController: UIViewController {
         collectionView.register(nib, forCellWithReuseIdentifier: SanatoriumCell.id)
     }
 
-
-
 }
 
 extension VitebskController: UICollectionViewDelegate {
@@ -87,6 +85,5 @@ extension VitebskController: UICollectionViewDataSource {
         
         return sanCell
     }
-    
     
 }

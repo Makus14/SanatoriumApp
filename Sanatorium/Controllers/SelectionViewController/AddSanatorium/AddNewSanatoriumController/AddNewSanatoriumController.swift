@@ -22,11 +22,28 @@ class AddNewSanatoriumController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+        
         setupGesture()
         photoImageView.layer.cornerRadius = 50
         photoImageView.layer.borderWidth = 0.5
     }
+    
+    @objc private func keyboardWillShow(notification: NSNotification) {
+           if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+               if self.view.frame.origin.y == 0 {
+                   self.view.frame.origin.y -= keyboardSize.height * 0.15
+               }
+           }
+       }
+
+       @objc private func keyboardWillHide(notification: NSNotification) {
+           if self.view.frame.origin.y != 0 {
+               self.view.frame.origin.y = 0
+           }
+       }
     
     func addSanatorium(completion: @escaping (AddSanatoriumResult) -> Void) {
         
@@ -42,7 +59,6 @@ class AddNewSanatoriumController: UIViewController {
                         "telefon": self.telefonField.text!,
                         "lat": self.latField.text!,
                         "lon": self.lonField.text!
-                        
                         
                     ]) { (error) in
                         if let error = error {
@@ -80,9 +96,6 @@ class AddNewSanatoriumController: UIViewController {
         }
     }
     
-    
-    
-
     private func setupGesture() {
         let tap = UITapGestureRecognizer(target: self, action: #selector(viewDidTap))
         self.view.addGestureRecognizer(tap)
@@ -91,8 +104,6 @@ class AddNewSanatoriumController: UIViewController {
     @objc private func viewDidTap() {
         self.dismiss(animated: true)
     }
-    
-    
     
     @IBAction func setImageDidTap(_ sender: Any) {
         let imagePikerController = UIImagePickerController()
@@ -113,8 +124,7 @@ class AddNewSanatoriumController: UIViewController {
         }
         
     }
-    
-    
+
 }
 
 extension AddNewSanatoriumController: UINavigationControllerDelegate, UIImagePickerControllerDelegate {
@@ -124,3 +134,4 @@ extension AddNewSanatoriumController: UINavigationControllerDelegate, UIImagePic
         photoImageView.image = image
     }
 }
+    

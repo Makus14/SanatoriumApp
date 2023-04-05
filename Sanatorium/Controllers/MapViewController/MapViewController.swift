@@ -67,11 +67,8 @@ class MapViewController: UIViewController {
         }
     }
  
-
 }
 
 extension MapViewController: GMSMapViewDelegate {
     
-
-
 }

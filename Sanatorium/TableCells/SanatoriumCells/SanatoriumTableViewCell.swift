@@ -15,9 +15,7 @@ class SanatoriumTableViewCell: UITableViewCell {
     @IBOutlet weak var iamgeOutlet: UIImageView!
     @IBOutlet weak var nameOutlet: UILabel!
     @IBOutlet weak var adressOutlet: UILabel!
-
     @IBOutlet weak var viewContainer: UIView!
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()

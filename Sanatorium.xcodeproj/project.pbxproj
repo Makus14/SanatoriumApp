@@ -23,6 +23,9 @@
 		BD72E11129CB80F300CC4816 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD72E10F29CB80F300CC4816 /* TitleTableViewCell.swift */; };
 		BD72E11229CB80F300CC4816 /* TitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD72E11029CB80F300CC4816 /* TitleTableViewCell.xib */; };
 		BD72E11429CB848C00CC4816 /* EnumHomeCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD72E11329CB848C00CC4816 /* EnumHomeCells.swift */; };
+		BD72E11929CC626600CC4816 /* ServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD72E11729CC626500CC4816 /* ServiceTableViewCell.swift */; };
+		BD72E11A29CC626600CC4816 /* ServiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD72E11829CC626500CC4816 /* ServiceTableViewCell.xib */; };
+		BD72E11C29CC67F000CC4816 /* EnumServiceCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD72E11B29CC67F000CC4816 /* EnumServiceCells.swift */; };
 		BD8001DA29787E2F00DEFA45 /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8001D829787E2F00DEFA45 /* FavouriteViewController.swift */; };
 		BD8001DB29787E2F00DEFA45 /* FavouriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD8001D929787E2F00DEFA45 /* FavouriteViewController.xib */; };
 		BD8624EB29A54F60004F402C /* RegionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8624EA29A54F60004F402C /* RegionModel.swift */; };
@@ -61,7 +64,6 @@
 		BDE3A09629BB6DC800A557A1 /* SanatoriumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDE3A09429BB6DC800A557A1 /* SanatoriumViewController.xib */; };
 		BDF09AFD29BC705B0008E26C /* SanatoriumCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF09AFB29BC705B0008E26C /* SanatoriumCollectionCell.swift */; };
 		BDF09AFE29BC705B0008E26C /* SanatoriumCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDF09AFC29BC705B0008E26C /* SanatoriumCollectionCell.xib */; };
-		BDF09B0129BDC3260008E26C /* DefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF09B0029BDC3260008E26C /* DefaultsManager.swift */; };
 		BDF09B0429BF84DA0008E26C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BDF09B0329BF84DA0008E26C /* SnapKit */; };
 		BDF09B0C29BF9F110008E26C /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF09B0A29BF9F110008E26C /* ServicesViewController.swift */; };
 		BDF09B0D29BF9F110008E26C /* ServicesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDF09B0B29BF9F110008E26C /* ServicesViewController.xib */; };
@@ -92,6 +94,9 @@
 		BD72E10F29CB80F300CC4816 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
 		BD72E11029CB80F300CC4816 /* TitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleTableViewCell.xib; sourceTree = "<group>"; };
 		BD72E11329CB848C00CC4816 /* EnumHomeCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumHomeCells.swift; sourceTree = "<group>"; };
+		BD72E11729CC626500CC4816 /* ServiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTableViewCell.swift; sourceTree = "<group>"; };
+		BD72E11829CC626500CC4816 /* ServiceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceTableViewCell.xib; sourceTree = "<group>"; };
+		BD72E11B29CC67F000CC4816 /* EnumServiceCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumServiceCells.swift; sourceTree = "<group>"; };
 		BD8001D829787E2F00DEFA45 /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
 		BD8001D929787E2F00DEFA45 /* FavouriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteViewController.xib; sourceTree = "<group>"; };
 		BD8624EA29A54F60004F402C /* RegionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionModel.swift; sourceTree = "<group>"; };
@@ -127,7 +132,6 @@
 		BDE3A09429BB6DC800A557A1 /* SanatoriumViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SanatoriumViewController.xib; sourceTree = "<group>"; };
 		BDF09AFB29BC705B0008E26C /* SanatoriumCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanatoriumCollectionCell.swift; sourceTree = "<group>"; };
 		BDF09AFC29BC705B0008E26C /* SanatoriumCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SanatoriumCollectionCell.xib; sourceTree = "<group>"; };
-		BDF09B0029BDC3260008E26C /* DefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsManager.swift; sourceTree = "<group>"; };
 		BDF09B0A29BF9F110008E26C /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
 		BDF09B0B29BF9F110008E26C /* ServicesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServicesViewController.xib; sourceTree = "<group>"; };
 		BDF09B0E29BF9F6A0008E26C /* RoomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsViewController.swift; sourceTree = "<group>"; };
@@ -264,6 +268,15 @@
 				BD72E11029CB80F300CC4816 /* TitleTableViewCell.xib */,
 			);
 			path = TitleCell;
+			sourceTree = "<group>";
+		};
+		BD72E11629CC623D00CC4816 /* ServiceCells */ = {
+			isa = PBXGroup;
+			children = (
+				BD72E11729CC626500CC4816 /* ServiceTableViewCell.swift */,
+				BD72E11829CC626500CC4816 /* ServiceTableViewCell.xib */,
+			);
+			path = ServiceCells;
 			sourceTree = "<group>";
 		};
 		BD8001D729787DBC00DEFA45 /* FavouriteViewController */ = {
@@ -487,6 +500,7 @@
 			children = (
 				BDE45086299ABCE90078F04E /* EnumAddSanatoriumResult */,
 				BD72E11329CB848C00CC4816 /* EnumHomeCells.swift */,
+				BD72E11B29CC67F000CC4816 /* EnumServiceCells.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -497,14 +511,6 @@
 				BD8624FF29AABE3C004F402C /* AddSanatoriumResult.swift */,
 			);
 			path = EnumAddSanatoriumResult;
-			sourceTree = "<group>";
-		};
-		BDF09AFF29BDC2E30008E26C /* DefaultsManager */ = {
-			isa = PBXGroup;
-			children = (
-				BDF09B0029BDC3260008E26C /* DefaultsManager.swift */,
-			);
-			path = DefaultsManager;
 			sourceTree = "<group>";
 		};
 		BDF09B0729BF9CC00008E26C /* SelectionController */ = {
@@ -545,7 +551,6 @@
 		BDF09B1329C079950008E26C /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				BDF09AFF29BDC2E30008E26C /* DefaultsManager */,
 				BDF09B1229C0797C0008E26C /* RealmManager */,
 			);
 			path = Manager;
@@ -554,6 +559,7 @@
 		BDF09B4A29CA2CEB0008E26C /* TableCells */ = {
 			isa = PBXGroup;
 			children = (
+				BD72E11629CC623D00CC4816 /* ServiceCells */,
 				BD72E10E29CB809D00CC4816 /* SanatoriumCells */,
 				BD72E10D29CB808F00CC4816 /* HomeCells */,
 			);
@@ -638,6 +644,7 @@
 				BDA0641729787CBE00B3E247 /* SelectionViewController.xib in Resources */,
 				BDF09B0D29BF9F110008E26C /* ServicesViewController.xib in Resources */,
 				BDF09B1129BF9F6A0008E26C /* RoomsViewController.xib in Resources */,
+				BD72E11A29CC626600CC4816 /* ServiceTableViewCell.xib in Resources */,
 				BDD0357C29A4DD72000FECEB /* GoogleService-Info.plist in Resources */,
 				BD43FC7C299E5F8E0025755B /* BrestController.xib in Resources */,
 				BDE3A09629BB6DC800A557A1 /* SanatoriumViewController.xib in Resources */,
@@ -733,6 +740,7 @@
 				BDF09B1029BF9F6A0008E26C /* RoomsViewController.swift in Sources */,
 				BDF09B4929CA174D0008E26C /* RealmSanatoriumModel.swift in Sources */,
 				BDE3A09529BB6DC800A557A1 /* SanatoriumViewController.swift in Sources */,
+				BD72E11C29CC67F000CC4816 /* EnumServiceCells.swift in Sources */,
 				BD43FC89299E60020025755B /* GomelController.swift in Sources */,
 				BDF09AFD29BC705B0008E26C /* SanatoriumCollectionCell.swift in Sources */,
 				BDF09B4D29CA2D150008E26C /* SanatoriumTableViewCell.swift in Sources */,
@@ -740,6 +748,7 @@
 				BD86250429AC070A004F402C /* FuncForBackground.swift in Sources */,
 				BDA063F7297878B200B3E247 /* AppDelegate.swift in Sources */,
 				BDA0641629787CBE00B3E247 /* SelectionViewController.swift in Sources */,
+				BD72E11929CC626600CC4816 /* ServiceTableViewCell.swift in Sources */,
 				BD8001DA29787E2F00DEFA45 /* FavouriteViewController.swift in Sources */,
 				BD8624FE29AA6EEF004F402C /* SanatoriumModel.swift in Sources */,
 				BD43FC92299E602C0025755B /* MinskController.swift in Sources */,
@@ -750,7 +759,6 @@
 				BD86250829AC0B78004F402C /* SanatoriumCell.swift in Sources */,
 				BDA0641A29787CCB00B3E247 /* MapViewController.swift in Sources */,
 				BD8624EB29A54F60004F402C /* RegionModel.swift in Sources */,
-				BDF09B0129BDC3260008E26C /* DefaultsManager.swift in Sources */,
 				BD72E11129CB80F300CC4816 /* TitleTableViewCell.swift in Sources */,
 				BD8624F129A790BA004F402C /* FuncForFirebase.swift in Sources */,
 				BD72E11429CB848C00CC4816 /* EnumHomeCells.swift in Sources */,

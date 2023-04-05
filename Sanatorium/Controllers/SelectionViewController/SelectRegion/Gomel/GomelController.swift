@@ -57,8 +57,6 @@ class GomelController: UIViewController {
         }
     }
 
-
-
 }
 
 extension GomelController: UICollectionViewDelegate {
@@ -87,6 +85,5 @@ extension GomelController: UICollectionViewDataSource {
         
         return sanCell
     }
-    
     
 }

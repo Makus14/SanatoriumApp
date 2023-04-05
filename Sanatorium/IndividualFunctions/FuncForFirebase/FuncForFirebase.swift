@@ -71,8 +71,6 @@ class FuncForFirebase {
                     sanatoriumModel.lat = lat
                     sanatoriumModel.lon = lon
                     
-                    
-//                    sanatoriumModel = SanatoriumModel(name: nameOfSanatorium, adress: adressOfSanatorium, id: id, imageURL: imageURL, telefon: telefon)
                     sanatoriumArray.append(sanatoriumModel)
                 }
                 completion(.success(sanatoriumArray))

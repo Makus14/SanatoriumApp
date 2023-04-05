@@ -71,7 +71,6 @@ extension ChoiceRegionController: UICollectionViewDataSource {
         return nameCell
     }
     
-    
 }
 
 extension ChoiceRegionController: UICollectionViewDelegate {

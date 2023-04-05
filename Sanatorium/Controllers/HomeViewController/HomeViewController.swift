@@ -8,20 +8,12 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-    private lazy var titleLabel: UILabel = {
-        let titleLabel = UILabel()
-        titleLabel.font = UIFont.boldSystemFont(ofSize: 17.0)
-        titleLabel.text = "Главная"
-        return titleLabel
-    }()
-    
     var settingPoints: [EnumHomeCells] = EnumHomeCells.allCases
     
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //navigationItem.titleView = titleLabel
         tableView.dataSource = self
         tableView.delegate = self
         registerCell()
@@ -44,7 +36,6 @@ class HomeViewController: UIViewController {
         
         tabBarController?.tabBar.standardAppearance = apperanceTabBar
     }
-
 
 }
 

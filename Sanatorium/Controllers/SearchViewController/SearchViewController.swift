@@ -47,7 +47,6 @@ class SearchViewController: UIViewController {
         collectionView.dataSource = self
         
         registerCell()
-
         getSanatorium()
         
     }
@@ -75,16 +74,20 @@ class SearchViewController: UIViewController {
 
     @IBAction func searchAction(_ sender: Any) {
         massSearch.removeAll()
-        
-            var i: Int = 0
             let text = self.searchFieldOutlet.text!.lowercased()
-            for _ in massSanatorium {
-                let isArrayContains = massSanatorium[i].name.lowercased().range(of: text)
+        for search in massSanatorium {
+            if text == "" {
+                let isArrayContains = search.name.lowercased()
                 if isArrayContains != nil {
-                    self.massSearch.append(massSanatorium[i])
+                    self.massSearch.append(search)
                 }
-                i = i + 1
+            } else {
+                let isArrayContains = search.name.lowercased().range(of: text)
+                if isArrayContains != nil {
+                    self.massSearch.append(search)
+                }
             }
+        }
         
     }
     
@@ -92,10 +95,10 @@ class SearchViewController: UIViewController {
 
 extension SearchViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
         let vcSanatorium = SanatoriumViewController(nibName: "SanatoriumViewController", bundle: nil)
         vcSanatorium.sanatoriumInfo = self.massSearch[indexPath.row]
         self.navigationController!.pushViewController(vcSanatorium, animated: true)
+        
     }
 }
 
@@ -116,6 +119,5 @@ extension SearchViewController: UICollectionViewDataSource {
         
         return sanCell
     }
-    
     
 }

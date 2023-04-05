@@ -56,7 +56,6 @@ class MinskController: UIViewController {
         }
     }
 
-
 }
 
 extension MinskController: UICollectionViewDelegate {
@@ -84,6 +83,5 @@ extension MinskController: UICollectionViewDataSource {
         sanCell.setSanatorium(name: nameOfSanatorium, city: adressOfSanatorium, imageURL: imageURL)
         return sanCell
     }
-    
     
 }

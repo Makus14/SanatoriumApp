@@ -67,16 +67,10 @@ class SelectionViewController: UIViewController {
     
     @objc func addSanatorium() {
         let vc = ChoiceRegionController(nibName: "ChoiceRegionController", bundle: nil)
-        
-        //vc.modalTransitionStyle = .crossDissolve
-        //vc.modalPresentationStyle = .overFullScreen
         present(vc, animated: true)
-        //self.navigationController!.pushViewController(vc, animated: true)
-        
-        //self.navigationController!.pushViewController(vc, animated: true)
+
     }
     
-
     func registerCell() {
         let nib = UINib(nibName: SelectCell.id, bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: SelectCell.id)
@@ -129,7 +123,6 @@ extension SelectionViewController: UICollectionViewDelegate {
             }
         }
     }
-    
     
 }
 

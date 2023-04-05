@@ -26,6 +26,4 @@ class TitleTableViewCell: UITableViewCell {
         imageContainerViewSecond.layer.cornerRadius = 10
     }
 
-    
-    
 }
